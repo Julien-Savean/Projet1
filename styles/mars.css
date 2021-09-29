@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "myFont";
+    src: url("/styles/font/ethnocentric\ rg.ttf") format("woff2");
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: cornsilk;
+    font-size: 1rem;
+}
+
+h1 {
+    font-family: "myFont";
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+    color: rgba(204, 89, 12, 0.705);
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: rgba(204, 89, 12, 0.705)  10px -10px 20px;
+}
+
+.sectionInfos {
+    padding: 2rem;
+    display: grid;
+    grid-template-areas: " a b "
+                         " c c ";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+}
+
+.imageBloc {
+    grid-area: a;
+    justify-self: center;
+    align-self: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+   
+.characteristicsBloc {
+    grid-area: b;
+    justify-self: center;
+    align-self: center;
+    border-left: 2px solid rgba(204, 89, 12, 0.705);
+    border-radius: 15%;
+    font-size: medium;
+    line-height: 2rem;
+    font-size: 1rem;
+}
+
+ul {
+    padding-left: 1rem;
+}
+
+li {
+    list-style-type: none
+}
+
+.presentationBloc {
+    grid-area: c ;
+    justify-self: center;
+    align-self: center;
+    padding:0rem 0rem 0rem 1rem;
+    border-bottom: 2px solid rgba(204, 89, 12, 0.705);
+    border-left: 2px solid rgba(204, 89, 12, 0.705);
+    border-radius: 20px 0 10px 20px;
+}
+
+h2 {
+    padding-left: 2rem;
+}
+
+.news {
+    padding: 2rem;
+}
+
+article {
+    border: 2px solid rgba(204, 89, 12, 0.705);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 1rem;   
+
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+        background-image: url(/styles/img/Mars-3D-Globe.svg);
+        background-position: -110rem;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 110%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 5rem 
+    }
+
+    .sectionInfos {
+        grid-template-areas: " b a "
+                             " c c ";
+    }
+
+    .characteristicsBloc {
+        border-left: 3px solid black;
+        font-size: 1.5rem;
+    }
+
+    .presentationBloc {
+        border-bottom: 3px solid black;
+        border-left: 3px solid black;
+    }
+
+    .sectionInfos {
+        flex: 1;
+    }
+    
+    .news {
+        flex: 1;
+    }
+
+}
