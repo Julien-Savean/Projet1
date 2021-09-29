@@ -5,17 +5,16 @@ for (let i = 0; i < planets.length; i++) {
      planets[i].addEventListener('click', function () {
           window.location.href = "./mars.html";
      })
-
 }
 
 
-const message = "Welcome";
-const welcomeMessage = document.querySelector('#welcome-message');
+const message = "Jupiter";
+// const welcomeMessage = document.querySelector('#welcome-message');
 
-function printLetterByLetter(message, speed) {
+function printLetterByLetter(message, speed, localisation) {
      let i = 0;
      let interval = setInterval(function () {
-          welcomeMessage.innerHTML += message.charAt(i);
+          localisation.innerHTML += message.charAt(i);
           i++;
           if (i > message.length) {
                clearInterval(interval);
@@ -23,9 +22,20 @@ function printLetterByLetter(message, speed) {
      }, speed);
 }
 
-printLetterByLetter(message, 1000);
+// let PlanetNames = {
+//      name: '',
+//      selector: ''
+// }
 
-welcomeMessage.innerHTML = "";
+// let jupiter = new PlanetNames();
+// jupiter.name = "Jupiter";
+// jupiter.selector = document.querySelector('#jupiter-p');
+
+// console.log(jupiter.selector);
+
+printLetterByLetter(message, 500, document.querySelector('#jupiter-p'));
+
+// welcomeMessage.innerHTML = "";
 
 
 
