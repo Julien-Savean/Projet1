@@ -1,0 +1,33 @@
+* {
+     margin: 0;
+}
+
+
+
+.planets-container {
+     height: 100%;
+     /* max-width: 100%; */
+     background-color: black;
+     color: white;
+     display: flex;
+     flex-flow: column nowrap;
+     align-items: center;
+}
+
+#sun {
+     z-index: 1;
+     position: relative;
+     top: -5rem;
+     margin: -10rem;
+}
+
+#welcome-message {
+     z-index: 1;
+     font-size: 5rem;
+}
+
+/* svg {
+     position: relative;
+     left: -20%;
+     top: -10%;
+} */
