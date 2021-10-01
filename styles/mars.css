@@ -7,6 +7,11 @@
     src: url("/styles/font/Anita\ semi\ square.ttf");
 }
 
+*{
+     padding:0;
+     margin: 0;
+}
+
 .mainpage {
     display: flex;
     flex-direction: column;
@@ -14,6 +19,7 @@
     color: cornsilk;
     font-size: 0.8rem;
 }
+
 h1 {
     font-family: "titleFont";
     font-size: 2rem;
@@ -25,6 +31,7 @@ h1 {
     text-shadow: rgba(204, 89, 12, 0.705) 10px -10px 20px;
     z-index: 2;
 }
+
 .sectionInfos {
     display: grid;
     grid-template-areas: " a b " 
