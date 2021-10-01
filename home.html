@@ -10,83 +10,38 @@
           <title>Document</title>
           <link rel="stylesheet" href="./styles/home.css" />
           <link rel="styleSheet" href="./styles/homeBackground.css" />
-          <link
-               rel="styleSheet"
-               href="./styles/img/rotation/rotating-mercury.css"
-          />
-          <link
-               rel="styleSheet"
-               href="./styles/img/rotation/rotating-venus.css"
-          />
-          <link
-               rel="styleSheet"
-               href="./styles/img/rotation/rotating-earth.css"
-          />
-          <link
-               rel="styleSheet"
-               href="./styles/img/rotation/rotating-mars.css"
-          />
-          <link
-               rel="styleSheet"
-               href="./styles/img/rotation/rotating-jupiter.css"
-          />
-          <link
-               rel="styleSheet"
-               href="./styles/img/rotation/rotating-saturn.css"
-          />
-          <link
-               rel="styleSheet"
-               href="./styles/img/rotation/rotating-uranus.css"
-          />
-          <link
-               rel="styleSheet"
-               href="./styles/img/rotation/rotating-neptune.css"
-          />
+          <link rel="stylesheet" href="./styles/img/rotation/planet-rotation.css" />
      </head>
-
-     <header></header>
-
      <body>
           <div class="stars"></div>
           <div class="twinkl"></div>
-          
+          <div class="menu">
+               <svg width="32" height="32" viewBox="0 0 32 32" class="menu-burger">
+                    <path d="M5.333 22.667h21.333v-2.667h-21.333v2.667zM5.333 17.333h21.333v-2.667h-21.333v2.667zM5.333 9.333v2.667h21.333v-2.667h-21.333z"></path>
+               </svg>
+               <div class="menu-navigation">
+                    <p>Mercury</p>
+                    <p>Venus</p>
+                    <p>Earth</p>
+                    <p>Mars</p>
+                    <p>Jupiter</p>
+                    <p>Saturn</p>
+                    <p>Uranus</p>
+                    <p>Neptune</p>
+               </div>
+          </div>
           <div class="planets-container">
-               <img src="./styles/img/textures/dsun.png" id="sun" />
-               <!-- <p id="welcome-message"></p> -->
+               <img src="" id="sun" alt="Sun"/> <!--La src se lance dans home.js-->
                <div id="mercury"></div>
                <div id="venus"></div>
                <div id="earth"></div>
                <div id="mars"></div>
                <div id="jupiter"></div>
-               <div id="saturn">
-                    <!-- <div id="saturn-crop"></div>                
-                    <svg viewBox="0 0 160 160" width="35rem" height="30rem">
-                         <g
-                              transform=" matrix(0.866, -0.5, 0.25, 0.433, 80, 80)"
-                         >
-
-                         
-                              <path
-                                   d="M 0,70 A 65,70 0 0,0 65,0 5,5 0 0,1 75,0 75,70 0 0,1 0,70Z"
-                                   fill="#fff"
-                              >
-                                   <animateTransform
-                                        attributeName="transform"
-                                        type="rotate"
-                                        from="360 0 0"
-                                        to="0 0 0"
-                                        dur="1s"
-                                        repeatCount="indefinite"
-                                   />
-                              </path>
-                         </g>
-                    </svg> -->
-               </div>
+               <div id="saturn"></div>
                <div id="uranus"></div>
                <div id="neptune"></div>
           </div>
      </body>
-
-     <footer></footer>
      <script src="home.js"></script>
+     <script src="./menuHome.js"></script>
 </html>
