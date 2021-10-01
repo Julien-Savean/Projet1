@@ -1,0 +1,114 @@
+@font-face {
+     font-family: "titleFont";
+     src: url("/styles/font/ethnocentric\ rg.ttf") format("woff2");
+}
+@font-face {
+     font-family: "textFont";
+     src: url("/styles/font/Anita\ semi\ square.ttf");
+}
+
+li {
+     list-style-type: none;
+}
+
+.ulHeader {
+     background-color: black;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     align-items: flex-end;
+     padding: 0px;
+     margin: 0px;
+     height: 3rem;
+     font-size: 1.5rem;
+     border-bottom: 1px solid cornsilk
+}
+
+.liHeader {
+     padding: 0;
+     margin: 0;
+     height: 3rem;
+}
+
+.liHeader1 {
+     padding: 0;
+     margin: 0;
+     height: 3rem;
+}
+
+.liHeader2 {
+     padding: 0;
+     margin: 0;
+     height: 3rem;
+}
+
+.menu-items {
+     color: cornsilk;
+     padding: 0;
+     margin: 0.5rem;
+     cursor: pointer;
+     font-family: "textFont";
+}
+
+#menuPlanete {
+     width: 100%;
+     height: auto;
+     display: none;
+     grid-template-areas:
+          "mercury mercury venus venus earth earth"
+          "mars mars jupiter jupiter saturn saturn"
+          "uranus uranus uranus neptune neptune neptune";
+     grid-template-columns: repeat(6, 1fr);
+     grid-template-rows: repeat(3, 32vh);
+     justify-content: center;
+     background-color: black;
+     color: cornsilk;
+     font-family: "titleFont";
+
+     /* inclure un gap */
+}
+
+.planete {
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     flex-direction: column;
+}
+
+.h4Planete {
+     font-size: 1rem;
+     display: flex;
+     cursor: pointer;
+}
+
+#mercury {
+     grid-area: mercury;
+}
+
+#venus {
+     grid-area: venus;
+}
+
+#earth {
+     grid-area: earth;
+}
+
+#mars {
+     grid-area: mars;
+}
+
+#jupiter {
+     grid-area: jupiter;
+}
+
+#saturn {
+     grid-area: saturn;
+}
+
+#uranus {
+     grid-area: uranus;
+}
+
+#neptune {
+     grid-area: neptune;
+}
