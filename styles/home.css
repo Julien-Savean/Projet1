@@ -1,133 +1,146 @@
 @font-face {
-     font-family: "myFont";
+     font-family: "titleFont";
      src: url("/styles/font/ethnocentric\ rg.ttf") format("woff2");
- }
+}
 
 * {
      margin: 0;
-     font-family: "myFont";
+     font-family: "titleFont";
+     overflow-x: hidden;
+}
+
+.menu {
+     position: absolute;
+     height: auto;
+     top: 0;
+     right: 0;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+     justify-content: center;
+}
+
+.menu-navigation {
+     height: 3rem;
+     height: 50vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: flex-end;
+     display: none;
+     z-index: 2;
+}
+
+.menu-burger {
+     margin: 0 0 3rem 0;
+     padding: 0;
+     height: 3rem;
+     width: 3rem;
+     z-index: 2;
+     opacity: 0.7;
+     cursor: pointer;
+     fill: white;
+}
+
+.menu-navigation p {
+     position: relative;
+     z-index: 1;
+     color: white;
+     padding-right: 0.5rem;
+     opacity: 0.7;
+     cursor: pointer;
 }
 
 .planets-container {
-     margin-top: 25%;
+     display: relative;
+     margin-top: 20%;
      height: 100%;
-     background-color: black;
      color: white;
      display: flex;
      flex-flow: column nowrap;
      align-items: center;
+     overflow:visible;
 }
 
 #sun {
      z-index: 1;
      position: absolute;
-     top: -90%;
-     width: 200%;
+     top: 0;
+     width: 150vw;
      height: auto;
      margin: 0;
      padding: 0;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
+     .menu {
+          position: absolute;
+          height: auto;
+          top: 0;
+          right: 0;
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: flex-end;
+          justify-content: center;
+     }
+
+     .menu-burger {
+          margin: 0;
+          padding: 0;
+          height: 3rem;
+          width: 3rem;
+          z-index: 1;
+          opacity: 0.7;
+          cursor: pointer;
+          fill: white;
+     }
+
+     .menu-burger:hover {
+          fill: red;
+     }
+
+     .menu-navigation {
+          height: 3rem;
+          width: 80vw;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: center;
+          display: none;
+          z-index: 1;
+     }
+
+     .menu-navigation p {
+          z-index: 1;
+          color: white;
+          padding: 0;
+          opacity: 0.7;
+          cursor: pointer;
+     }
+
+     .menu-navigation p:hover {
+          color: red;
+          margin-top: 0.5rem;
+     }
+
      .planets-container {
+          width: 100vw;
           height: 100vh;
           margin-top: 0;
-          display: grid;
-          grid-template-rows: repeat(6, 1fr);
-          grid-template-columns: repeat(7, 1fr);
-          /**
-          e = earth
-          v = venus
-          m = mars
-          j = jupiter
-          r = sun
-          p = mercure
-          s = saturn
-          n = neptune
-          u = uranus **/
-          grid-template-areas:
-               ". . e . m . JP"
-               ". v r r r j j"
-               ". p r r r j j"
-               ". . r r r s s"
-               "n n . u u s s"
-               "n n . u u . .";
-          justify-items: center;
-          align-items: center;
-          justify-content: center;
-          align-content: center;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-evenly;
+          
      }
 
      #sun {
-          position: relative;
+          left: 0;
+          top:0;
+          padding: 0;
+          margin: 0;
+          position: fixed;
           z-index: 1;
-          grid-area: r;
-          top: 0;
+          height: 100vh;
           width: auto;
-          height: auto;
      }
-     #mercury {
-          grid-area: p;
-          align-self: end;
-          justify-self: end;
-     }
-
-     #venus {
-          grid-area: v;
-
-     }
-     #earth {
-          grid-area: e;
-     }
-     #mars {
-          grid-area: m;
-     }
-     #jupiter {
-          grid-area: j;
-          align-self: end;
-          justify-self: start;
-     }
-     #jupiter-p {
-          color: lightgreen;
-          font-size: 2rem;
-          width: min-content;
-          height: min-content;
-          z-index: 2;
-          border-left: 1px solid lightgreen;
-          border-bottom: 3px solid lightgreen;
-          padding: 0.5rem;
-          border-radius: 0.8rem;
-          grid-area: JP;
-          align-self: center;
-          justify-self: start;
-     }
-     #saturn {
-          grid-area: s;
-          align-self: start;
-          justify-self: start;
-          /* display: flex;
-          flex-direction: row-reverse; */
-
-     }
-     #saturn-p {
-          color: lightgreen;
-          font-size: 2rem;
-          width: min-content;
-          height: min-content;
-          z-index: 2;
-          border-left: 1px solid lightgreen;
-          border-bottom: 3px solid lightgreen;
-          padding: 0.5rem;
-          border-radius: 0.8rem;
-          grid-area: s;
-          align-self: stretch;
-          justify-self: end;
-     }
-     #uranus {
-          grid-area: u;
-     }
-     #neptune {
-          grid-area: n;
-     }
-
 }

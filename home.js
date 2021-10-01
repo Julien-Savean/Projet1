@@ -1,43 +1,28 @@
+/**
+ * Attention Event pour changer la src de l'image en fonction de la taille de l'écran
+ * C'est pas propre du tout =)
+ */
+const sun = document.querySelector('#sun');
+if (window.matchMedia("(min-width: 800px)").matches) {
+     sun.src = "./styles/img/textures/dvertical-sun.png";
+} else if (window.matchMedia("(max-width: 800px)").matches) {
+     sun.src = "./styles/img/textures/dhorizontal-sun.png";
+}
+window.addEventListener('resize', function () {
+     if (window.matchMedia("(min-width: 800px)").matches) {
+          sun.src = "./styles/img/textures/dvertical-sun.png";
+     } else if (window.matchMedia("(max-width: 800px)").matches) {
+          sun.src = "./styles/img/textures/dhorizontal-sun.png";
+     }
+})
+
+
+/**
+ * permet de rediriger vers mars
+ */
 const planets = document.querySelectorAll(".planets-container > div");
-
-
 for (let i = 0; i < planets.length; i++) {
      planets[i].addEventListener('click', function () {
           window.location.href = "./mars.html";
      })
 }
-
-
-const message = "Jupiter";
-// const welcomeMessage = document.querySelector('#welcome-message');
-
-function printLetterByLetter(message, speed, localisation) {
-     let i = 0;
-     let interval = setInterval(function () {
-          localisation.innerHTML += message.charAt(i);
-          i++;
-          if (i > message.length) {
-               clearInterval(interval);
-          }
-     }, speed);
-}
-
-// let PlanetNames = {
-//      name: '',
-//      selector: ''
-// }
-
-// let jupiter = new PlanetNames();
-// jupiter.name = "Jupiter";
-// jupiter.selector = document.querySelector('#jupiter-p');
-
-// console.log(jupiter.selector);
-
-printLetterByLetter(message, 500, document.querySelector('#jupiter-p'));
-
-// welcomeMessage.innerHTML = "";
-
-
-
-
-
