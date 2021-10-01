@@ -2,7 +2,7 @@
   body {
     position: relative;
     height: auto;
-    z-index: 1;
+    
   }
 
   li {
@@ -105,13 +105,12 @@
     grid-template-columns: 50px 50px 50px 50px 50px 50px;
     grid-template-rows: 150px 150px 150px;
     justify-content: center;
-    z-index: 0;
     position: fixed;
     opacity: 0;
   }
 
   #julien {
-    z-index: -1;
+    
     position: absolute;
   }
 
