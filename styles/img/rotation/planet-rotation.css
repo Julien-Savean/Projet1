@@ -7,7 +7,7 @@
      z-index: 1;
      width: calc(var(--planetSize) * 3rem);
      height: calc(var(--planetSize) * 3rem);
-     background: url("../textures/dmercurytexture.jpg");
+     background: url("../textures/mercury2k.jpg");
      border-radius: 50%;
      background-size: 200%;
      box-shadow: inset 16px 0 40px 3px rgb(0, 0, 0),
@@ -25,7 +25,7 @@
      z-index: 1;
      width: calc(var(--planetSize) * 4rem);
      height: calc(var(--planetSize) * 4rem);
-     background: url("../textures/dvenustexture.jpg");
+     background: url("../textures/venus2k.jpg");
      border-radius: 50%;
      background-size: 200%;
      box-shadow: inset 0px 0px 40px 3px rgb(0, 0, 0),
@@ -43,7 +43,7 @@
      z-index: 1;
      width: calc(var(--planetSize) * 5rem);
      height: calc(var(--planetSize) * 5rem);
-     background: url("../textures/dearthtexture.jpg");
+     background: url("../textures/earth2k.jpg");
      border-radius: 50%;
      background-size: 200%;
      box-shadow: inset 0px 0px 40px 3px rgb(0, 0, 0),
@@ -61,7 +61,7 @@
      z-index: 1;
      width: calc(var(--planetSize) * 4.5rem);
      height: calc(var(--planetSize) * 4.5rem);
-     background: url("../textures/dmarstexture.jpg");
+     background: url("../textures/mars2k.jpg");
      border-radius: 50%;
      background-size: 200%;
      box-shadow: inset 0px 0px 40px 3px rgb(0, 0, 0),
@@ -79,7 +79,7 @@
      z-index: 1;
      width: calc(var(--planetSize) * 15rem);
      height: calc(var(--planetSize) * 15rem);
-     background: url("../textures/djupitertexture.jpg");
+     background: url("../textures/jupiter2k.jpg");
      border-radius: 50%;
      background-size: 200%;
      box-shadow: inset 0px 0px 40px 3px rgb(0, 0, 0),
@@ -97,7 +97,7 @@
      z-index: 1;
      width: calc(var(--planetSize) * 10rem);
      height: calc(var(--planetSize) * 10rem);
-     background: url("../textures/dsaturntexture.jpg");
+     background: url("../textures/saturn2k.jpg");
      border-radius: 50%;
      background-size: 200%;
      box-shadow: inset 0px 0px 40px 3px rgb(0, 0, 0),
