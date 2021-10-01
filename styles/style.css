@@ -1,0 +1,11 @@
+@media screen and (max-width: 600px) {
+    
+section {
+        background-color: black;
+    }
+
+header {
+        background-color: wheat;
+    }
+
+}
