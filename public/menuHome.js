@@ -8,7 +8,7 @@ const menuNavigationChilds = document.querySelectorAll(".menu-navigation >p");
  * Redirection vers Mars au clique
  */
 menuBurger.addEventListener('click', function () {
-     if (menuNavigation.style.display == "inline-flex") {
+     if (menuNavigation.style.display === "inline-flex") {
           menuNavigation.style.display = "none";
      } else {
           menuNavigation.style.display = "inline-flex";
@@ -16,6 +16,6 @@ menuBurger.addEventListener('click', function () {
 })
 for (let i = 0; i < menuNavigationChilds.length; i++) {
      menuNavigationChilds[i].addEventListener('click', function () {
-          window.location.href = "./mars.html";
+          window.location.href = "./mars";
      })
 }

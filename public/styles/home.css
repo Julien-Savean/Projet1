@@ -1,6 +1,6 @@
 @font-face {
      font-family: "titleFont";
-     src: url("/styles/font/ethnocentric\ rg.ttf") format("woff2");
+     src: url("./font/ethnocentric\ rg.ttf") format("woff2");
 }
 
 * {
@@ -52,7 +52,6 @@
 }
 
 .planets-container {
-     display: relative;
      margin-top: 20%;
      height: 100%;
      color: white;

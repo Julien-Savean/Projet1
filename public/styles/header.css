@@ -1,10 +1,10 @@
 @font-face {
      font-family: "titleFont";
-     src: url("/styles/font/ethnocentric\ rg.ttf") format("woff2");
+     src: url("./font/ethnocentric\ rg.ttf") format("woff2");
 }
 @font-face {
      font-family: "textFont";
-     src: url("/styles/font/Anita\ semi\ square.ttf");
+     src: url("./font/Anita\ semi\ square.ttf");
 }
 
 li {
@@ -55,7 +55,7 @@ li {
      z-index: 1;
 }
 
-#menuPlanete {
+#menuPlanets {
      width: 100%;
      height: auto;
      display: none;
@@ -74,7 +74,7 @@ li {
      /* inclure un gap */
 }
 
-.planete {
+.planet {
      display: flex;
      justify-content: space-evenly;
      align-items: center;
@@ -82,7 +82,7 @@ li {
      z-index: 1;
 }
 
-.h4Planete {
+.h4Planet {
      font-size: 1rem;
      display: flex;
      cursor: pointer;
