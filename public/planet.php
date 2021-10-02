@@ -2,10 +2,10 @@
 /**
  * This page get the values in the database array and inject it in html
  *
- * _GET the value of planet in query ( planet?planet=nameOfThePlanet ) and assign it in $planet
- * check if nameOfThePlanet exist in planetsInfos.php's $planets as key
+ * _GET the value of planet in query ( planet?planet=nameOfThePlanet ) and assign it to $planet
+ * it check if nameOfThePlanet exist in planetsInfos.php's $planets as key
  * if true = $planetInfos;
- * if false redirection to home
+ * if false redirection to home.php
  */
 $planet = $_GET["planet"];
 include('./public/databases/planetsInfos.php');
@@ -40,10 +40,10 @@ if ($planets[$planet]) {
 <!-- import header in the planet.php -->
 <?php include "header.php" ?>
 
-
 <!--begin template of page with php inject with query ✔-->
 <section class="mainpage">
 
+    <!-- Main title of the page -->
     <?= "<h1> $planet </h1>" ?>
 
     <section class=sectionInfos>
