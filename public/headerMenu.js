@@ -1,13 +1,13 @@
 const planetMenu = document.querySelector('.liHeader1');
-const menuPlanete = document.querySelector('#menuPlanets');
+const menuPlanet = document.querySelector('#menuPlanets');
 
 
 planetMenu.addEventListener("click", function () {
-     if (menuPlanete.style.display === "grid") {
-          menuPlanete.style.display = "none";
+     if (menuPlanet.style.display === "grid") {
+          menuPlanet.style.display = "none";
 
      } else {
-          menuPlanete.style.display = "grid";
+          menuPlanet.style.display = "grid";
      }
 });
 
