@@ -14,8 +14,10 @@ menuBurger.addEventListener('click', function () {
           menuNavigation.style.display = "inline-flex";
      }  
 })
+
+//navigation menu home
 for (let i = 0; i < menuNavigationChilds.length; i++) {
      menuNavigationChilds[i].addEventListener('click', function () {
-          window.location.href = "./mars";
+          window.location.href = `./planet?planet=${menuNavigationChilds[i].innerHTML.toLowerCase()}`;
      })
 }

@@ -10,7 +10,7 @@
           <title>Document</title>
           <link rel="stylesheet" href="./public/styles/home.css" />
           <link rel="styleSheet" href="./public/styles/homeBackground.css" />
-          <link rel="stylesheet" href="./public/styles/img/rotation/planet-rotation.css" />
+          <link rel="stylesheet" href="./public/styles/img/rotation/home-planets-rotation.css" />
      </head>
      <body>
 
@@ -22,7 +22,7 @@
                   <path d="M5.333 22.667h21.333v-2.667h-21.333v2.667zM5.333 17.333h21.333v-2.667h-21.333v2.667zM5.333 9.333v2.667h21.333v-2.667h-21.333z"></path>
               </svg>
               <div class="menu-navigation">
-                  <a href="/planet?planet=mercury">Mercury</a>
+                  <p>Mercury</p>
                   <p>Venus</p>
                   <p>Earth</p>
                   <p>Mars</p>

@@ -23,6 +23,7 @@ window.addEventListener('resize', function () {
 const planets = document.querySelectorAll(".planets-container > div");
 for (let i = 0; i < planets.length; i++) {
      planets[i].addEventListener('click', function () {
-          window.location.href = "./mars";
+          console.log(planets[i])
+          window.location.href = `./planet?planet=${planets[i].id}`;
      })
 }

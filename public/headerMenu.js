@@ -24,10 +24,10 @@ aboutMenu.addEventListener("click", function () {
 });
 
 
-const h4Menu = document.querySelectorAll(".h4Planete");
+const h4Menu = document.querySelectorAll(".h4Planet");
 
 for (let i = 0; i < h4Menu.length; i++) {
      h4Menu[i].addEventListener('click', function () {
-          window.location.href = "./mars";
+          window.location.href = `./planet?planet=${h4Menu[i].innerHTML.toLowerCase()}`;
      })
 }

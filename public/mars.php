@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mars</title>
-    <link rel="stylesheet" type="text/css" href="./public/styles/mars.css">
+    <link rel="stylesheet" type="text/css" href="./public/styles/planets.css">
     <link rel="styleSheet" href="./public/styles/homeBackground.css"/>
     <link rel="styleSheet" href="./public/styles/header.css"/>
 
