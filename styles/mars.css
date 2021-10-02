@@ -147,7 +147,7 @@ article {
           margin: 3rem;
      }
      .sectionInfos {
-          grid-template-areas: " b a " " c c ";
+          grid-template-areas: " b a " " c c " "";
           margin: 1.2rem;
      }
      .characteristicsBloc {
@@ -198,13 +198,6 @@ article {
 }
 
 
-
-
-
-
-
-
-
 /** 
 **Mars rotation
 */
@@ -226,6 +219,8 @@ article {
      grid-area: a;
      justify-self: center;
 }
+
+
 
 
 @keyframes rotate {

@@ -26,25 +26,40 @@ li {
 }
 
 .liHeader {
+     display: flex;
+     justify-content: center;
      padding: 0;
      margin: 0;
      height: 3rem;
      z-index: 1;
+     font-size: 1.8rem;
 }
+
 
 .liHeader1 {
+     display: flex;
+     justify-content: center;
      padding: 0;
      margin: 0;
      height: 3rem;
      z-index: 1;
+     font-size: 1.8rem;
 }
 
+
 .liHeader2 {
+     display: flex;
+     justify-content: center;
      padding: 0;
      margin: 0;
      height: 3rem;
      z-index: 1;
+     font-size: 1.8rem;
 }
+
+
+
+
 
 .menu-items {
      color: cornsilk;
@@ -55,14 +70,20 @@ li {
      z-index: 1;
 }
 
+.menu-items:hover {
+     animation-duration: 1.5s;
+     animation-name: hover;
+     animation-fill-mode: forwards;
+}
+
 #menuPlanete {
      width: 100%;
      height: auto;
      display: none;
      grid-template-areas:
-          "mercury mercury venus venus earth earth"
-          "mars mars jupiter jupiter saturn saturn"
-          "uranus uranus uranus neptune neptune neptune";
+     "mercury mercury venus venus earth earth"
+     "mars mars jupiter jupiter saturn saturn"
+     "uranus uranus uranus neptune neptune neptune";
      grid-template-columns: repeat(6, 1fr);
      grid-template-rows: repeat(3, 32vh);
      justify-content: center;
@@ -70,8 +91,9 @@ li {
      color: cornsilk;
      font-family: "titleFont";
      z-index: 1;
-
-     /* inclure un gap */
+     
+     
+     
 }
 
 .planete {
@@ -89,34 +111,310 @@ li {
      z-index: 1;
 }
 
+.h4Planete:hover {
+     animation-duration: 1.5s;
+     animation-name: hoverTitlePlanete;
+     animation-fill-mode: forwards;
+}
+
 #mercuryGrid {
      grid-area: mercury;
 }
+
+#imgMercury {
+     z-index: 1;
+     width: 5rem;
+     height: 5rem;
+     background: gray;
+     border-radius: 50%;
+     background-size: 200%;
+     box-shadow: inset 16px 0 40px 3px rgb(0, 0, 0),
+          inset -3px 0 6px 2px rgba(255, 255, 255, 0.2);
+     animation-name: rotate;
+     animation-duration: 20s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+     transition: transform 1s;
+     box-shadow: 0px 0px 4px rgb(212, 211, 211);
+}
+
 
 #venusGrid {
      grid-area: venus;
 }
 
+#imgVenus {
+     z-index: 1;
+     width: 5rem;
+     height: 5rem;
+     background: rgb(55, 52, 226);
+     border-radius: 50%;
+     background-size: 200%;
+     box-shadow: inset 16px 0 40px 3px rgb(0, 0, 0),
+          inset -3px 0 6px 2px rgba(255, 255, 255, 0.2);
+     animation-name: rotate;
+     animation-duration: 20s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+     transition: transform 1s;
+     box-shadow: 0px 0px 4px rgb(212, 211, 211);
+}
+
+
 #earthGrid {
      grid-area: earth;
+}
+
+#imgEarth {
+     z-index: 1;
+     width: 5rem;
+     height: 5rem;
+     background: rgb(72, 163, 125);
+     border-radius: 50%;
+     background-size: 200%;
+     box-shadow: inset 16px 0 40px 3px rgb(0, 0, 0),
+          inset -3px 0 6px 2px rgba(255, 255, 255, 0.2);
+     animation-name: rotate;
+     animation-duration: 20s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+     transition: transform 1s;
+     box-shadow: 0px 0px 4px rgb(212, 211, 211);
 }
 
 #marsGrid {
      grid-area: mars;
 }
 
+ #imgMars {
+     z-index: 1;
+     width: 5rem;
+     height: 5rem;
+     background: url("./img/textures/dmarstexture.jpg");
+     border-radius: 50%;
+     background-size: 200%;
+     box-shadow: inset 0px 0px 40px 3px rgb(117, 39, 39),
+     inset -3px 40px 40px 2px rgba(0, 0, 0, 0.2);
+     animation-name: rotate;
+     animation-duration: 20s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+     justify-self: center;
+     box-shadow: 0px 0px 4px rgb(212, 211, 211);  
+}
+
+#h4Mars:hover {
+     animation-duration: 1.5s;
+     animation-name: hoverTitlePlanete;
+     animation-fill-mode: forwards;
+}
+
+#h4Mars:hover ~ #imgMars {
+     animation-direction: normal;
+     animation-name: hoverPlanete;
+     animation-duration: 6s;
+}
+
 #jupiterGrid {
      grid-area: jupiter;
+}
+
+#imgJupiter {
+     z-index: 1;
+     width: 5rem;
+     height: 5rem;
+     background: rgb(245, 145, 145);
+     border-radius: 50%;
+     background-size: 200%;
+     box-shadow: inset 0px 0px 40px 3px rgb(156, 71, 71),
+     inset -3px 40px 40px 2px rgba(0, 0, 0, 0.2);
+     animation-name: rotate;
+     animation-duration: 20s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+     justify-self: center;
+     box-shadow: 0px 0px 4px white;  
 }
 
 #saturnGrid {
      grid-area: saturn;
 }
 
+#imgSaturn {
+     z-index: 1;
+     width: 5rem;
+     height: 5rem;
+     background: rgb(56, 104, 84);
+     border-radius: 50%;
+     background-size: 200%;
+     box-shadow: inset 16px 0 40px 3px rgb(0, 0, 0),
+          inset -3px 0 6px 2px rgba(255, 255, 255, 0.2);
+     animation-name: rotate;
+     animation-duration: 20s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+     transition: transform 1s;
+     box-shadow: 0px 0px 4px rgb(212, 211, 211);
+}
+
 #uranusGrid {
      grid-area: uranus;
 }
 
+#imgUranus {
+     z-index: 1;
+     width: 5rem;
+     height: 5rem;
+     background: rgb(198, 209, 204);
+     border-radius: 50%;
+     background-size: 200%;
+     box-shadow: inset 16px 0 40px 3px rgb(0, 0, 0),
+          inset -3px 0 6px 2px rgba(255, 255, 255, 0.2);
+     animation-name: rotate;
+     animation-duration: 20s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+     transition: transform 1s;
+     box-shadow: 0px 0px 4px rgb(212, 211, 211);
+}
+
+
+
 #neptuneGrid {
      grid-area: neptune;
+}
+
+#imgNeptune {
+     z-index: 1;
+     width: 5rem;
+     height: 5rem;
+     background: rgb(64, 63, 99);
+     border-radius: 50%;
+     background-size: 200%;
+     box-shadow: inset 16px 0 40px 3px rgb(0, 0, 0),
+          inset -3px 0 6px 2px rgba(255, 255, 255, 0.2);
+     animation-name: rotate;
+     animation-duration: 20s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+     transition: transform 1s;
+     box-shadow: 0px 0px 4px rgb(212, 211, 211);
+}
+
+footer {
+     
+     height: 5rem;
+}
+
+#ulFooter {
+     height: 5rem;
+     width: 100%;
+     display: inline-flex;
+     grid-gap: 24px;
+     align-items: center;
+     margin: auto;
+     justify-content: center;
+   }
+
+   #ulFooter p {
+     width: 4rem;
+     height: 3rem;
+     align-items: center;
+     justify-content: center;
+     font-size: 1.3rem;
+     text-align: center;
+     position: relative;
+     display: inline-flex;
+   }
+   
+   @media (min-width: 500px) {
+     #marsUlFooter {
+       grid-auto-flow: column;
+     }
+   }
+   
+   a {
+     color: white;
+     text-decoration: none;
+     font-size: 0.8rem;
+   }
+   
+   #liFooter:hover {
+     animation-duration: 1.5s;
+     animation-name: hover;
+     animation-fill-mode: forwards;
+   }
+   
+   
+   #liFooter:hover ~ li p {
+     animation: wave-animation 0.3s infinite;
+   }
+   
+   
+   @keyframes wave-animation {
+     0%,
+     100% {
+       transform: rotate(0deg);
+     }
+     25% {
+       transform: rotate(20deg);
+     }
+     75% {
+       transform: rotate(-15deg);
+     }
+   }
+   
+
+@keyframes hover {
+     from {
+          transform: scale(1);
+     }
+
+     75% {
+          border-bottom: 2px solid white;
+     }
+
+     to {
+          transform: scale(1.3);
+          border-bottom: 2px solid white;
+     }
+}
+
+@keyframes hoverPlanete {
+        from {
+          background-position-x: 0px;
+          margin-left: 0rem;
+          }
+          25% {
+          background-position-x: 50%;
+          margin-left:-8rem;
+          }
+          50% {
+          background-position-x: 100%;
+          margin-left: 0rem;
+          }
+          75% {
+          background-position-x: 150%;
+          margin-left: 8rem;
+          }
+          100% {
+          background-position-x: 200%;
+          margin-left: 0rem;
+          }
+
+}
+
+@keyframes hoverTitlePlanete {
+     from {
+          transform: scale(1);
+     }
+
+     75% {
+          border-bottom: 2px solid white;
+     }
+
+     to {
+          transform: scale(1.4);
+          border-bottom: 2px solid white;
+     }
 }
