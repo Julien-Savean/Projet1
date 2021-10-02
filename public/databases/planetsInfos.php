@@ -44,8 +44,3 @@ $planets = [
     "neptune" => [''],
 ];
 
-
-function (string $planet, array $planetInfos)
-{
-
-}
