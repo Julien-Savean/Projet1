@@ -11,13 +11,13 @@
 }
 .stars {
      background: #000
-          url("./img/textures/dtwinklebackground.png") repeat top
+          url("img/textures/dtwinklebackground.png") repeat top
           center;
      z-index: 0;
 }
 .twinkl {
      background: transparent
-          url("./img/textures/dtwinklestars.png") repeat top
+          url("img/textures/dtwinklestars.png") repeat top
           center;
      z-index: 0;
      animation: move-twink-back 500s linear infinite;

@@ -8,8 +8,9 @@
  * if false redirection to home.php
  */
 $planet = $_GET["planet"];
-include('./public/databases/planetsInfos.php');
-if ($planets[$planet]) {
+include('../databases/planetsInfos.php');
+
+if (isset($planets) && $planets[$planet]) {
     $planetInfos = $planets[$planet];
 } else {
     header("Location: /");
@@ -26,10 +27,10 @@ if ($planets[$planet]) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php echo "<title>$planet</title>" ?> <!--modify title of the page with query-->
-    <link rel="stylesheet" href="./public/styles/planets.css">
-    <link rel="stylesheet" href="./public/styles/img/rotation/planet-planets-rotation.css">
-    <link rel="styleSheet" href="./public/styles/homeBackground.css"/>
-    <link rel="styleSheet" href="./public/styles/header.css"/>
+    <link rel="stylesheet" href="/styles/planets.css">
+    <link rel="stylesheet" href="/styles/img/rotation/planet-planets-rotation.css">
+    <link rel="styleSheet" href="/styles/homeBackground.css"/>
+    <link rel="styleSheet" href="/styles/header.css"/>
 </head>
 
 <body>
@@ -88,7 +89,7 @@ if ($planets[$planet]) {
 <!--end template of page with php inject with query 🚫-->
 
 </body>
-<script src="./public/headerMenu.js"></script>
+<script src="/headerMenu.js"></script>
 
 </html>
 <!-- end of html🚫-->

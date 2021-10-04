@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./public/styles/about.css">
-     <link rel="stylesheet" href="./public/styles/header.css">
+    <link rel="stylesheet" href="/styles/about.css">
+     <link rel="stylesheet" href="/styles/header.css">
 
 
 </head>
@@ -20,9 +20,9 @@
     <div class="container">
         
         <div class="cpictures">
-            <img src="./public/images/mars-attacks.jpg" alt="alien">
-            <img src="./public/images/vessel.jpg" alt="vaisseau">
-            <div class="fusee"><img src="./public/images/fusse1.gif" alt="fusée"></div>
+            <img src="/images/mars-attacks.jpg" alt="alien">
+            <img src="/images/vessel.jpg" alt="vaisseau">
+            <div class="fusee"><img src="/images/fusse1.gif" alt="fusée"></div>
         </div>
         <div class="ctext">
                 <p>I'm sure the universe is full of intelligent life. It's just been too intelligent to come here. The Earth
@@ -38,7 +38,7 @@
     </div>
        
 </body>
-<script src="./public/headerMenu.js"></script>
+<script src="/headerMenu.js"></script>
 
 
 </html>

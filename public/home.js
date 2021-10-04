@@ -4,15 +4,15 @@
  */
 const sun = document.querySelector('#sun');
 if (window.matchMedia("(min-width: 800px)").matches) {
-     sun.src = "./public/styles/img/textures/dvertical-sun.png";
+     sun.src = "./styles/img/textures/dvertical-sun.png";
 } else if (window.matchMedia("(max-width: 800px)").matches) {
-     sun.src = "./public/styles/img/textures/dhorizontal-sun.png";
+     sun.src = "./styles/img/textures/dhorizontal-sun.png";
 }
 window.addEventListener('resize', function () {
      if (window.matchMedia("(min-width: 800px)").matches) {
-          sun.src = "./public/styles/img/textures/dvertical-sun.png";
+          sun.src = "./styles/img/textures/dvertical-sun.png";
      } else if (window.matchMedia("(max-width: 800px)").matches) {
-          sun.src = "./public/styles/img/textures/dhorizontal-sun.png";
+          sun.src = "./styles/img/textures/dhorizontal-sun.png";
      }
 })
 

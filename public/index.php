@@ -22,11 +22,11 @@
 $urlPath = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 if ('/' === $urlPath) {
-    require __DIR__ . '/public/home.php';
+    require __DIR__ . '/../template/home.php';
 } else if ('/about' === $urlPath) {
-    require __DIR__ . '/public/about.php';
+    require __DIR__ . '/../template/about.php';
 } else if ('/planet' === $urlPath) {
-    require __DIR__ . '/public/planet.php';
+    require __DIR__ . '/../template/planet.php';
 }else {
-    require __DIR__ . '/public/error404.php';
+    require __DIR__ . '/../template/error404.php';
 }
