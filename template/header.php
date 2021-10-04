@@ -13,28 +13,37 @@
 </header>
 
 <section id="menuPlanets">
-    <div id="mercuryGrid" class="planet">
-        <h4 class="h4Planet">Mercury</h4>
+    <div id="mercuryGrid" class="planete">
+        <div id="imgMercury"></div>
+        <h4 id="h4Mercury" class="h4Planet">Mercury</h4>
+
     </div>
-    <div id="venusGrid" class="planet">
+    <div id="venusGrid" class="planete">
+        <div id="imgVenus"></div>
         <h4 class="h4Planet">Venus</h4>
     </div>
-    <div id="earthGrid" class="planet">
+    <div id="earthGrid" class="planete">
+        <div id="imgEarth"></div>
         <h4 class="h4Planet">Earth</h4>
     </div>
-    <div id="marsGrid" class="planet">
-        <h4 class="h4Planet">Mars</h4>
+    <div id="marsGrid" class="planete">
+        <div id="imgMars"></div>
+        <h4 id="h4Mars" class="h4Planet">Mars</h4>
     </div>
-    <div id="jupiterGrid" class="planet">
+    <div id="jupiterGrid" class="planete">
+        <div id="imgJupiter"></div>
         <h4 class="h4Planet">Jupiter</h4>
     </div>
-    <div id="saturnGrid" class="planet">
+    <div id="saturnGrid" class="planete">
+        <div id="imgSaturn"></div>
         <h4 class="h4Planet">Saturn</h4>
     </div>
-    <div id="uranusGrid" class="planet">
+    <div id="uranusGrid" class="planete">
+        <div id="imgUranus"></div>
         <h4 class="h4Planet">Uranus</h4>
     </div>
-    <div id="neptuneGrid" class="planet">
+    <div id="neptuneGrid" class="planete">
+        <div id="imgNeptune"></div>
         <h4 class="h4Planet">Neptune</h4>
     </div>
 </section>

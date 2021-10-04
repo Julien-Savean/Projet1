@@ -31,6 +31,7 @@ if (isset($planets) && $planets[$planet]) {
     <link rel="stylesheet" href="/styles/img/rotation/planet-planets-rotation.css">
     <link rel="styleSheet" href="/styles/homeBackground.css"/>
     <link rel="styleSheet" href="/styles/header.css"/>
+    <link rel="stylesheet" href="/styles/footer.css">
 </head>
 
 <body>
@@ -42,50 +43,56 @@ if (isset($planets) && $planets[$planet]) {
 <?php include "header.php" ?>
 
 <!--begin template of page with php inject with query ✔-->
-<section class="mainpage">
 
-    <!-- Main title of the page -->
-    <?= "<h1> $planet </h1>" ?>
+<div class="main-container">
+    <section class="mainpage">
 
-    <section class=sectionInfos>
+        <!-- Main title of the page -->
+        <?= "<h1> $planet </h1>" ?>
 
-        <!-- picture of the rotating planet => CSS planet.css-->
-        <?= "<div id=\"$planet\"></div>" ?>
+        <section class=sectionInfos>
 
-        <!-- inject features from database array-->
-        <div class="characteristicsBloc">
-            <ul>
-                <?= "<li><u>Satellites:</u> " . $planetInfos["features"]["satellites"] . "</li>
+            <!-- picture of the rotating planet => CSS planet.css-->
+            <?= "<div id=\"$planet\"></div>" ?>
+
+            <!-- inject features from database array-->
+            <div class="characteristicsBloc">
+                <ul>
+                    <?= "<li><u>Satellites:</u> " . $planetInfos["features"]["satellites"] . "</li>
                 <li><u>Mass:</u> " . $planetInfos["features"]["mass"] . "</li>
                 <li><u>Volume:</u> " . $planetInfos["features"]["volume"] . "</li>
                 <li><u>Orbital period:</u> " . $planetInfos["features"]["orbital period"] . "</li>
                 <li><u>Surface temp.:</u> " . $planetInfos["features"]["surface temp."] . "</li>"
-                ?>
-            </ul>
-        </div>
+                    ?>
+                </ul>
+            </div>
 
-        <!-- inject description from database array -->
-        <div class="presentationBloc">
-            <?php echo "<p>" . $planetInfos["description"][0] . "</p>" ?>
-            <?php echo "<p>" . $planetInfos["description"][1] . "</p>" ?>
-        </div>
+            <!-- inject description from database array -->
+            <div class="presentationBloc">
+                <?php echo "<p>" . $planetInfos["description"][0] . "</p>" ?>
+                <?php echo "<p>" . $planetInfos["description"][1] . "</p>" ?>
+            </div>
 
-    </section>
+        </section>
 
 
-    <section class="news">
-        <!-- inject news from database array -->
-        <h2>Current events:</h2>
-        <?=
-        "<article class=articles>" . $planetInfos["news"][0] . "</article>
+        <section class="news">
+            <!-- inject news from database array -->
+            <h2>Current events:</h2>
+            <?=
+            "<article class=articles>" . $planetInfos["news"][0] . "</article>
         <article class=articles> " . $planetInfos["news"][1] . "</article>
         <article class=articles> " . $planetInfos["news"][2] . "</article>
         <article class=articles> " . $planetInfos["news"][3] . "</article>
         <article class=articles> " . $planetInfos["news"][4] . "</article>"
-        ?>
+            ?>
+        </section>
     </section>
 
-</section>
+    <?php include "footer.php" ?>
+</div>
+</body>
+
 <!--end template of page with php inject with query 🚫-->
 
 </body>

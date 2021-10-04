@@ -1,122 +1,346 @@
 @font-face {
-     font-family: "titleFont";
-     src: url("./font/ethnocentric\ rg.ttf") format("woff2");
+    font-family: "titleFont";
+    src: url("./font/ethnocentric\ rg.ttf") format("woff2");
 }
+
 @font-face {
-     font-family: "textFont";
-     src: url("./font/Anita\ semi\ square.ttf");
+    font-family: "textFont";
+    src: url("./font/Anita\ semi\ square.ttf");
 }
 
 li {
-     list-style-type: none;
+    list-style-type: none;
 }
 
 .ulHeader {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-evenly;
-     align-items: flex-end;
-     padding: 0px;
-     margin: 0px;
-     height: 3rem;
-     font-size: 1.5rem;
-     z-index: 1;
-     border-bottom: 1px solid cornsilk;
-     position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 0;
+    margin: 0;
+    height: 3rem;
+    font-size: 1.5rem;
+    z-index: 1;
+    border-bottom: 1px solid cornsilk;
+    position: relative;
 }
 
 .liHeader {
-     padding: 0;
-     margin: 0;
-     height: 3rem;
-     z-index: 1;
+    padding: 0;
+    margin: 0;
+    height: 3rem;
+    z-index: 1;
 }
 
 .liHeader1 {
-     padding: 0;
-     margin: 0;
-     height: 3rem;
-     z-index: 1;
+    padding: 0;
+    margin: 0;
+    height: 3rem;
+    z-index: 1;
 }
 
 .liHeader2 {
-     padding: 0;
-     margin: 0;
-     height: 3rem;
-     z-index: 1;
+    padding: 0;
+    margin: 0;
+    height: 3rem;
+    z-index: 1;
 }
 
 .menu-items {
-     color: cornsilk;
-     padding: 0;
-     margin: 0.5rem;
-     cursor: pointer;
-     font-family: "textFont";
-     z-index: 1;
+    color: cornsilk;
+    padding: 0;
+    margin: 0.5rem;
+    cursor: pointer;
+    font-family: "textFont";
+    z-index: 1;
+}
+
+
+.menu-items:hover {
+    animation-duration: 1.5s;
+    animation-name: hover;
+    animation-fill-mode: forwards;
 }
 
 #menuPlanets {
-     width: 100%;
-     height: auto;
-     display: none;
-     grid-template-areas:
+    justify-self: center;
+    height: auto;
+    display: none;
+    grid-template-areas:
           "mercury mercury venus venus earth earth"
           "mars mars jupiter jupiter saturn saturn"
           "uranus uranus uranus neptune neptune neptune";
-     grid-template-columns: repeat(6, 1fr);
-     grid-template-rows: repeat(3, 32vh);
-     justify-content: center;
-     background-color: black;
-     color: cornsilk;
-     font-family: "titleFont";
-     z-index: 1;
+    grid-template-columns: repeat(6, 16.6vw);
+    grid-template-rows: repeat(3, 30vh);
+    grid-gap: 0;
+    justify-items: center;
+    align-items: center;
+    background-color: black;
+    color: cornsilk;
+    font-family: "titleFont";
+    z-index: 1;
 
-     /* inclure un gap */
+    /* inclure un gap */
 }
 
 .planet {
-     display: flex;
-     justify-content: space-evenly;
-     align-items: center;
-     flex-direction: column;
-     z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
 }
 
 .h4Planet {
-     font-size: 1rem;
-     display: flex;
-     cursor: pointer;
-     z-index: 1;
+    font-size: 1rem;
+    display: flex;
+    cursor: pointer;
+    z-index: 1;
+    margin-top: 2rem;
+}
+
+.h4Planet:hover {
+    animation-duration: 1.5s;
+    animation-name: hoverTitlePlanet;
+    animation-fill-mode: forwards;
 }
 
 #mercuryGrid {
-     grid-area: mercury;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: mercury;
+}
+
+#imgMercury {
+    z-index: 1;
+    width: 7rem;
+    height: 7rem;
+    background: url("./img/textures/mercury2k.jpg");
+    border-radius: 50%;
+    background-size: 200%;
+    box-shadow: inset 16px 0 40px 3px rgb(0, 0, 0),
+    inset -3px 0 6px 2px rgba(255, 255, 255, 0.2);
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: transform 1s;
 }
 
 #venusGrid {
-     grid-area: venus;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    grid-area: venus;
+}
+
+#imgVenus {
+    z-index: 1;
+    width: 7rem;
+    height: 7rem;
+    background: url("./img/textures/venus2k.jpg");
+    border-radius: 50%;
+    background-size: 200%;
+    box-shadow: inset 16px 0 40px 3px rgb(0, 0, 0),
+    inset -3px 0 6px 2px rgba(255, 255, 255, 0.2);
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: transform 1s;
 }
 
 #earthGrid {
-     grid-area: earth;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    grid-area: earth;
+}
+
+#imgEarth {
+    z-index: 1;
+    width: 7rem;
+    height: 7rem;
+    background: url("./img/textures/earth2k.jpg");
+    border-radius: 50%;
+    background-size: 200%;
+    box-shadow: inset 16px 0 40px 3px rgb(0, 0, 0),
+    inset -3px 0 6px 2px rgba(255, 255, 255, 0.2);
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: transform 1s;
 }
 
 #marsGrid {
-     grid-area: mars;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    grid-area: mars;
 }
 
+#imgMars {
+    z-index: 1;
+    width: 7rem;
+    height: 7rem;
+    background: url("./img/textures/mars2k.jpg");
+    border-radius: 50%;
+    background-size: 200%;
+    box-shadow: inset 0 0 40px 3px rgb(117, 39, 39),
+    inset -3px 40px 40px 2px rgba(0, 0, 0, 0.2);
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    justify-self: center;
+}
+
+
+/* A voir avec Benjamin */
+
+/*#h4Mars:hover {
+    animation-duration: 1.5s;
+    animation-name: hoverTitlePlanet;
+    animation-fill-mode: forwards;
+}
+
+#h4Mars:hover ~ #imgMars {
+    animation-direction: normal;
+    animation-name: hoverPlanet;
+    animation-duration: 6s;
+}*/
+
 #jupiterGrid {
-     grid-area: jupiter;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    grid-area: jupiter;
+}
+
+#imgJupiter {
+    z-index: 1;
+    width: 7rem;
+    height: 7rem;
+    background: url("./img/textures/jupiter2k.jpg");
+    border-radius: 50%;
+    background-size: 200%;
+    box-shadow: inset 0 0 40px 3px rgb(156, 71, 71),
+    inset -3px 40px 40px 2px rgba(0, 0, 0, 0.2);
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    justify-self: center;
 }
 
 #saturnGrid {
-     grid-area: saturn;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    grid-area: saturn;
+}
+
+#imgSaturn {
+    z-index: 1;
+    width: 7rem;
+    height: 7rem;
+    background: url("./img/textures/saturn2k.jpg");
+    border-radius: 50%;
+    background-size: 200%;
+    box-shadow: inset 16px 0 40px 3px rgb(0, 0, 0),
+    inset -3px 0 6px 2px rgba(255, 255, 255, 0.2);
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: transform 1s;
 }
 
 #uranusGrid {
-     grid-area: uranus;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    grid-area: uranus;
+}
+
+#imgUranus {
+    z-index: 1;
+    width: 7rem;
+    height: 7rem;
+    background: url("./img/textures/duranustexture.jpg");
+    border-radius: 50%;
+    background-size: 200%;
+    box-shadow: inset 16px 0 40px 3px rgb(0, 0, 0),
+    inset -3px 0 6px 2px rgba(255, 255, 255, 0.2);
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: transform 1s;
 }
 
 #neptuneGrid {
-     grid-area: neptune;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    grid-area: neptune;
 }
+
+#imgNeptune {
+    z-index: 1;
+    width: 7rem;
+    height: 7rem;
+    background: url("./img/textures/dnepturetexture.jpg");
+    border-radius: 50%;
+    background-size: 200%;
+    box-shadow: inset 16px 0 40px 3px rgb(0, 0, 0),
+    inset -3px 0 6px 2px rgba(255, 255, 255, 0.2);
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: transform 1s;
+}
+
+
+@keyframes hover {
+    from {
+        transform: scale(1);
+    }
+
+    75% {
+        border-bottom: 2px solid white;
+    }
+
+    to {
+        transform: scale(1.3);
+        border-bottom: 2px solid white;
+    }
+}
+
+@keyframes hoverTitlePlanet {
+    from {
+        transform: scale(1);
+    }
+
+    75% {
+        border-bottom: 2px solid white;
+    }
+
+    to {
+        transform: scale(1.4);
+        border-bottom: 2px solid white;
+    }
+}
+
