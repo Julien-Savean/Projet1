@@ -159,7 +159,6 @@
         justify-items: center;
         align-items: center
     }*/
-
     #sun {
         left: 0;
         top: 0;
@@ -171,34 +170,34 @@
         width: auto;
     }
 
-/*    #mercury {
-        grid-area: p;
-    }
-    #venus {
-        grid-area: v;
-    }
-    #earth {
-        grid-area: e;
-    }
-    #mars {
-        grid-area: m;
-    }
-    #jupiter {
-        grid-area: j;
-        justify-self: right;
-    }
-    #saturn {
-        grid-area: s;
-        justify-self: right;
-    }
-    #uranus {
-        grid-area: u;
-        justify-self: center;
-        align-self: end;
-    }
-    #neptune {
-        grid-area: n;
-        justify-self: center;
-        align-self: start;
-    }*/
+    /*   #mercury {
+           grid-area: p;
+       }
+       #venus {
+           grid-area: v;
+       }
+       #earth {
+           grid-area: e;
+       }
+       #mars {
+           grid-area: m;
+       }
+       #jupiter {
+           grid-area: j;
+           justify-self: right;
+       }
+       #saturn {
+           grid-area: s;
+           justify-self: right;
+       }
+       #uranus {
+           grid-area: u;
+           justify-self: center;
+           align-self: end;
+       }
+       #neptune {
+           grid-area: n;
+           justify-self: center;
+           align-self: start;
+       }*/
 }
