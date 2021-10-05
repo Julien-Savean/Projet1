@@ -1,0 +1,177 @@
+/**
+** planets rotation
+*/
+
+#mercury {
+    margin: 1.5rem;
+    z-index: 1;
+    width: 12rem;
+    height: 12rem;
+    background: url("../textures/mercury2k.jpg");
+    border-radius: 50%;
+    background-size: 200%;
+    box-shadow: inset 0 0 40px 3px rgb(0, 0, 0),
+    inset -3px 40px 40px 2px rgba(255, 255, 255, 0.2);
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    grid-area: a;
+    justify-self: center;
+}
+
+#venus {
+    margin: 1.5rem;
+    z-index: 1;
+    width: 12rem;
+    height: 12rem;
+    background: url("../textures/venus2k.jpg");
+    border-radius: 50%;
+    background-size: 200%;
+    box-shadow: inset 0 0 40px 3px rgb(0, 0, 0),
+    inset -3px 40px 40px 2px rgba(255, 255, 255, 0.2);
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    grid-area: a;
+    justify-self: center;
+}
+
+#earth {
+    margin: 1.5rem;
+    z-index: 1;
+    width: 12rem;
+    height: 12rem;
+    background: url("../textures/earth2k.jpg");
+    border-radius: 50%;
+    background-size: 200%;
+    box-shadow: inset 0 0 40px 3px rgb(0, 0, 0),
+    inset -3px 40px 40px 2px rgba(255, 255, 255, 0.2);
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    grid-area: a;
+    justify-self: center;
+}
+
+#mars {
+    margin: 1.5rem;
+    z-index: 1;
+    width: 12rem;
+    height: 12rem;
+    background: url("../textures/mars2k.jpg");
+    border-radius: 50%;
+    background-size: 200%;
+    box-shadow: inset 0 0 40px 3px rgb(0, 0, 0),
+    inset -3px 40px 40px 2px rgba(255, 255, 255, 0.2);
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    grid-area: a;
+    justify-self: center;
+}
+
+#jupiter {
+    margin: 1.5rem;
+    z-index: 1;
+    width: 12rem;
+    height: 12rem;
+    background: url("../textures/jupiter2k.jpg");
+    border-radius: 50%;
+    background-size: 200%;
+    box-shadow: inset 0 0 40px 3px rgb(0, 0, 0),
+    inset -3px 40px 40px 2px rgba(255, 255, 255, 0.2);
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    grid-area: a;
+    justify-self: center;
+}
+
+#saturn {
+    margin: 1.5rem;
+    z-index: 1;
+    width: 12rem;
+    height: 12rem;
+    background: url("../textures/saturn2k.jpg");
+    border-radius: 50%;
+    background-size: 200%;
+    box-shadow: inset 0 0 40px 3px rgb(0, 0, 0),
+    inset -3px 40px 40px 2px rgba(255, 255, 255, 0.2);
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    grid-area: a;
+    justify-self: center;
+}
+
+#uranus {
+    margin: 1.5rem;
+    z-index: 1;
+    width: 12rem;
+    height: 12rem;
+    background: url("../textures/duranustexture.jpg");
+    border-radius: 50%;
+    background-size: 200%;
+    box-shadow: inset 0 0 40px 3px rgb(0, 0, 0),
+    inset -3px 40px 40px 2px rgba(255, 255, 255, 0.2);
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    grid-area: a;
+    justify-self: center;
+}
+
+#neptune {
+    margin: 1.5rem;
+    z-index: 1;
+    width: 12rem;
+    height: 12rem;
+    background: url("../textures/dnepturetexture.jpg");
+    border-radius: 50%;
+    background-size: 200%;
+    box-shadow: inset 0 0 40px 3px rgb(0, 0, 0),
+    inset -3px 40px 40px 2px rgba(255, 255, 255, 0.2);
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    grid-area: a;
+    justify-self: center;
+}
+
+
+@media only screen and (min-width: 700px) {
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+
+}
+
+@media only screen and (min-width: 1500px) {
+
+
+}
+
+
+
+
+
+
+@keyframes rotate {
+    from {
+        background-position-x: 0;
+    }
+    to {
+        background-position-x: 200%;
+    }
+}
