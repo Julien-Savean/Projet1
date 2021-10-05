@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "titleFont";
+    src: url("./font/ethnocentric\ rg.ttf") format("woff2");
+}
+
+@font-face {
+    font-family: "textFont";
+    src: url("./font/Anita\ semi\ square.ttf");
+}
+
+
+.footer {
+    font-family: "textFont";
+    color: cornsilk;
+    height: 5rem;
+    z-index: 1;
+    width: 95vw;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+#ulFooter {
+    z-index: 1;
+    height: 7rem;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+
+}
+
+#ulFooter p {
+    z-index: 1;
+    width: 4rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    text-align: center;
+    display: inline-flex;
+}
+
+
+a {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#liFooter:hover {
+    z-index: 1;
+    animation-duration: 1.5s;
+    animation-name: hover;
+    animation-fill-mode: forwards;
+}
+
+
+#liFooter:hover ~ li p {
+    z-index: 1;
+    animation: wave-animation 0.3s infinite;
+}
+
+
+@keyframes wave-animation {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(20deg);
+    }
+    75% {
+        transform: rotate(-15deg);
+    }
+}
