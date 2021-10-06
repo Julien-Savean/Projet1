@@ -31,3 +31,11 @@ for (let i = 0; i < h4Menu.length; i++) {
           window.location.href = `./planet?planet=${h4Menu[i].innerHTML.toLowerCase()}`;
      })
 }
+
+const imgPlanete = document.querySelectorAll(".imgPlanete");
+
+for (let i = 0; i < imgPlanete.length; i++) {
+     imgPlanete[i].addEventListener('click', function () {
+          window.location.href = `./planet?planet=${imgPlanete[i].innerHTML.toLowerCase()}`;
+     })
+}

@@ -130,6 +130,15 @@ h3 {
           line-height: 1.8rem;
           font-size: 1em;
      }
+
+     .planet {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          flex-direction: column;
+          z-index: 1;
+          width: 5rem;
+      }
 }
 
 @media only screen and (min-width: 700px) {
