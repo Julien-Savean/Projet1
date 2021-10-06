@@ -5,8 +5,13 @@
 
 * {
     margin: 0;
-    font-family: "titleFont";
+    font-family: "titleFont", "sans-serif";
     overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: cornsilk;
 }
 
 .menu {
@@ -15,20 +20,6 @@
     top: 0;
     right: 0;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.menu-navigation {
-    height: 3rem;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    display: none;
-    z-index: 2;
 }
 
 .menu-burger {
@@ -42,13 +33,30 @@
     fill: white;
 }
 
-.menu-navigation p {
-    position: relative;
-    z-index: 1;
-    color: white;
-    padding-right: 0.5rem;
-    opacity: 0.7;
+.home {
+    display: none;
+}
+
+.home.homeMenu {
+    z-index: 2;
     cursor: pointer;
+    grid-area: home;
+    justify-self: end;
+    align-self: start;
+    display: block;
+}
+
+.about {
+    display: none;
+}
+
+.about.aboutMenu {
+    z-index: 2;
+    cursor: pointer;
+    grid-area: about;
+    justify-self: start;
+    align-self: start;
+    display: block;
 }
 
 #sun {
@@ -62,31 +70,87 @@
 }
 
 .planets-container {
-    margin-top: 20%;
+    margin-top: 0;
     height: 100%;
     color: white;
-    display: flex;
-    flex-flow: column nowrap;
+    display: grid;
+    grid-template-rows: 7rem repeat(8, auto);
+    grid-template-columns: auto auto;
+    /**
+        p = mercure
+        e = earth
+        v = venus
+        m = mars
+        j = jupiter
+        s = saturn
+        n = neptune
+        u = uranus **/
+    grid-template-areas:
+                " home menu about"
+                " mercuryv mercuryr mercuryt "
+                " venusv venusr venust  "
+                " earthv earthr eartht "
+                " marsv marsr marst "
+                " jupiterv jupiterr jupitert "
+                " saturnv saturnr saturnt "
+                " uranusv uranusr uranust "
+                " neptunev  neptuner neptunet ";
+    justify-items: center;
     align-items: center;
     overflow: visible;
+}
+
+#mercury {
+    grid-area: mercuryr;
+}
+
+#venus {
+    grid-area: venusr;
+}
+
+#earth {
+    grid-area: earthr;
+}
+
+#mars {
+    grid-area: marsr;
+}
+
+#jupiter {
+    grid-area: jupiterr;
+}
+
+#saturn {
+    grid-area: saturnr;
+}
+
+#uranus {
+    grid-area: uranusr;
+}
+
+#neptune {
+    grid-area: neptuner;
 }
 
 .planetName {
     z-index: 3;
     display: none;
-    grid-area: jp;
 }
 
+.planets-container.planetMenuMobile > div {
+    width: 6.5rem !important;
+    height: 6.5rem !important;
+    justify-self: end;
+}
+
+
+/*breakpoint*/
 @media only screen and (min-width: 1100px) {
     .menu {
         position: absolute;
         height: auto;
         top: 0;
         right: 0;
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: flex-end;
-        justify-content: center;
     }
 
     .menu-burger {
@@ -98,35 +162,27 @@
         opacity: 0.7;
         cursor: pointer;
         fill: white;
-    }
-
-    .menu-burger:hover {
-        fill: red;
-    }
-
-    .menu-navigation {
-        height: 3rem;
-        width: 80vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
         display: none;
-        z-index: 1;
     }
 
-    .menu-navigation p {
-        z-index: 1;
-        color: white;
-        padding: 0;
-        opacity: 0.7;
+    .home {
+        z-index: 2;
         cursor: pointer;
+        justify-self: end;
+        grid-area: uranust;
+        align-self: start;
+        display: block;
     }
 
-    .menu-navigation p:hover {
-        color: red;
-        margin-top: 0.5rem;
+    .about{
+        z-index: 2;
+        cursor: pointer;
+        justify-self: center;
+        grid-area: neptunet;
+        align-self: start;
+        display: block;
     }
+
 
     #sun {
         left: 0;
@@ -141,7 +197,7 @@
 
     .planets-container {
         width: 100vw;
-        height: 100vh;
+        height: 95vh;
         margin-top: 0;
         display: grid;
         grid-template-rows: 32% auto 32%;
@@ -157,7 +213,7 @@
             u = uranus **/
         grid-template-areas:
                 " . mercuryt venust eartht marst jupitert saturnt uranust neptunet . "
-                " . p v e m j s u n . "
+                " . mercuryr venusr earthr marsr jupiterr saturnr uranusr neptuner . "
                 " . . . . . . . . . . ";
         justify-items: center;
     }
@@ -170,43 +226,46 @@
     }
 
     #mercury {
-        grid-area: p;
+        grid-area: mercuryr;
     }
 
     #venus {
-        grid-area: v;
+        grid-area: venusr;
     }
 
     #earth {
-        grid-area: e;
+        grid-area: earthr;
     }
 
     #mars {
-        grid-area: m;
+        grid-area: marsr;
     }
 
     #jupiter {
-        grid-area: j;
+        grid-area: jupiterr;
     }
 
     #saturn {
-        grid-area: s;
+        grid-area: saturnr;
     }
 
     #uranus {
-        grid-area: u;
+        grid-area: uranusr;
     }
 
     #neptune {
-        grid-area: n;
+        grid-area: neptuner;
     }
 
 
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1500px) {
     .planets-container {
-        grid-template-rows: 29% auto 29%;
+        width: 100vw;
+        height: 95vh;
+        grid-template-rows: 28% auto 28%;
+        margin-top: 0;
     }
 
 }

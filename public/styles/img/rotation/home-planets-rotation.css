@@ -1,5 +1,5 @@
 * {
-    --planetSize: 1.5;
+    --planetSize: 1.3;
     --marginPlanet: 1rem;
     --scale: 1;
 }
@@ -75,8 +75,8 @@
 #jupiter {
     margin: var(--marginPlanet);
     z-index: 1;
-    width: calc(var(--planetSize) * 15rem);
-    height: calc(var(--planetSize) * 15rem);
+    width: calc(var(--planetSize) * 13rem);
+    height: calc(var(--planetSize) * 13rem);
     background: url("../textures/jupiter2k.jpg");
     border-radius: 50%;
     background-size: 200%;
