@@ -69,8 +69,8 @@ if (isset($planets) && $planets[$planet]) {
 
             <!-- inject description from database array -->
             <div class="presentationBloc" style='border-color: <?=$planetInfos["color"]?>'>
-                <?php echo "<p>" . $planetInfos["description"][0] . "</p>" ?>
-                <?php echo "<p>" . $planetInfos["description"][1] . "</p>" ?>
+                <p><?php echo $planetInfos["description"][0]?></p>
+                <p><?php echo $planetInfos["description"][1]?></p>
             </div>
 
         </section>
