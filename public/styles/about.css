@@ -80,9 +80,10 @@ form {
 }
 
 fieldset {
-    padding: 0 20px 20px 20px;
+    padding: 0 30px 30px 30px;
     margin-bottom: 10px;
     border: 1px solid rgba(204, 89, 12, 0.705);
+    border-radius: 3px;
 }
 
 legend {
@@ -97,11 +98,16 @@ label {
 
 label.inline {
     display: inline;
-    margin-right: 25px;
+    margin-right: 30px; 
+    font-size: 20px;
+    
 }
 
 input, textarea, select, option {
-    background-color: #FFF3F3;
+    background-color: rgb(7, 0, 0, 0.3);
+    color: white;
+    padding: 0.5rem;
+    font-size: 16px;
 }
 
 input, textarea, select {
@@ -119,15 +125,26 @@ select {
 input[type=radio] {
     background-color: transparent;
     border: none;
-    width: 10px;
+    width: 20px;
+    height: 2em;
+    margin-top: 20px;
 }
 
-input[type=submit], input[type=reset] {
+input[type=submit] {
     width: 60px;
     margin-left: 20px;
+    margin-bottom: 10px;
     box-shadow: 1px 1px 1px #D83F3D;
     cursor: pointer;
+    margin-left: 82%;
+    background-color: rgb(7, 0, 0, 0.3);
+    color: white;
 }
+.para {
+    text-align: justify;
+    margin-top: 5px;
+}
+
 
 @media screen and (min-width: 600px) {
     .container {
@@ -157,6 +174,7 @@ input[type=submit], input[type=reset] {
         align-items: center;
         border-bottom: 3px solid rgba(204, 89, 12, 0.705);
         border-left: 3px solid rgba(204, 89, 12, 0.705);
+        border-bottom-left-radius: 15px;
     }
 
     form {
@@ -166,12 +184,67 @@ input[type=submit], input[type=reset] {
     }
 
     textarea {
-        width: fit-content;
-        height: 450px;
+        width: 95%;
+        height: 20em;
+        background-color: rgb(7, 0, 0, 0.3);
+        color: white;
+        padding: 1rem;
+        font-size: 20px;
     }
 
     h1 {
         margin-top: 4%;
     }
+    .para, .para2, .para3, .para4 {
+        font-size: 20px;
+        margin-top: 2%;
+    }
+    
+    label.inline {
+        margin-right: 50px;
+        font-size: 100%;
+    }
+    input[type=radio] {
+        border: 0px;
+        width: 5%;
+        height: 1.5em;
+        margin-top: 10px;
+    }
+    #utilise {
+        height: 25px;
+        width:20%;
+        font-size: 15px;
+        text-align: center;
+        font-weight: bold;
+        background-color: rgb(7, 0, 0, 0.3);
+        color: white;
+    }
+    #email {
+        height: 25px;
+        width: 50%;
+        font-size: 20px;
+        background-color: rgb(7, 0, 0, 0.3);
+        color: white;
+        padding: 0.5rem;
+        
+    }
+    input[type=submit] {
+        border: 0px;
+        width: 10%;
+        height: 2em;
+        font-size: 1em;
+        font-weight: bold;
+        margin-top: 2%;
+        margin-left: 90%;
+        background-color: rgb(7, 0, 0, 0.3);
+        color: white;
+
+    }
+    
+    .title {
+        font-size: 2em;
+    }
+    
+    
 
 }
