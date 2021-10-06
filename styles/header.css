@@ -209,7 +209,7 @@ li {
      animation-fill-mode: forwards;
 }
 
-#h4Mars:hover ~ #imgMars {
+#imgMars:hover {
      animation-direction: normal;
      animation-name: hoverPlanete;
      animation-duration: 6s;

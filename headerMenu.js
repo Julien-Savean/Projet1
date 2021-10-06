@@ -32,9 +32,5 @@ for (let i = 0; i < h4Menu.length; i++) {
      })
 }
 
-const h4Mars = document.querySelector("#h4Mars");
-const imgMars = document.querySelector("#imgMars");
 
-if (h4Mars === "hover") {
-     imgMars.style.boxShadow = "0px 0px 5px white";
-}
+
