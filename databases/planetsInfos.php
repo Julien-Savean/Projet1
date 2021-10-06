@@ -12,16 +12,34 @@ $planets = [
             "satellites" => "0",
             "mass" => "3.3011×10²³ kg",
             "volume" => "6.083×10¹⁰ km³",
-            "orbital period" => "87.9691 days",
-            "surface temp." => "-173°C / 427°C",
+            "orbital period" => "87.97 days",
+            "surface temp." => "-173°C/427°C",
         ],
-        "news" => [
-            "(Freddie) Mercury est trop cool",
-            "C'est de la bombe",
-            "J'adore",
-            "C'est cool",
-            "Si on vis dessus",
-        ]
+        "news1" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "news2" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "news3" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "news4" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "color" => "#898688"
     ],
     "venus" => [
         "description" => [
@@ -35,13 +53,31 @@ $planets = [
             "orbital period" => "116.75 days",
             "surface temp." => "mean 464°C",
         ],
-        "news" => [
-            "Venus est trop cool",
-            "C'est de la bombe",
-            "J'adore",
-            "C'est cool",
-            "Si on vis dessus",
-        ]
+        "news1" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "news2" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "news3" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "news4" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "color" => "#CF7B2C"
     ],
     "earth" => [
         "description" => [
@@ -52,16 +88,34 @@ $planets = [
             "satellites" => "1",
             "mass" => "	5.97237×1024²⁴ kg",
             "volume" => "1.08321×10¹² km³",
-            "orbital period" => "365.256363004 days",
-            "surface temp." => "−89.2°C / 14°C / 56.7°C",
+            "orbital period" => "365.26 days",
+            "surface temp." => "−89.2°C/56.7°C",
         ],
-        "news" => [
-            "La terre ça pue",
-            "C'est moche",
-            "Les gens font la gueule",
-            "Surtout les \"Français\"",
-            "Si on vis dessus on y meurt",
-        ]
+        "news1" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "JamesWebb",
+            "h3" => "James Webb is ready: ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "news2" => [
+            "src" => "/images/WPS.png",
+            "alt" => "Wild Pod School",
+            "h3" => "The Wild Pod School is open: ",
+            "text" => "Welcome to the craziest project of the 21st century. Sign up now !",
+        ],
+        "news3" => [
+            "src" => "/images/logo.png",
+            "alt" => "beer",
+            "h3" => "New global pandemic: ",
+            "text" => "The OMS accuses the \"Abbe Beer\" of being the cause of alcoholism in 80% of the world population.",
+        ],
+        "news4" => [
+            "src" => "/images/starship.jpg",
+            "alt" => "starship",
+            "h3" => "FAA delays orbital test: ",
+            "text" => "Elon Musk's spaceship and its superheavy booster will not take off before 2022.",
+        ],
+        "color" => "#2d57ad"
     ],
     "mars" => [
         "description" => [
@@ -86,16 +140,34 @@ $planets = [
             "satellites" => "2",
             "mass" => "6.4171×102²³ kg",
             "volume" => "1.63118×10¹¹ km³",
-            "orbital period" => "686.980 days",
-            "surface temp." => "−143°C / 35°C",
+            "orbital period" => "686.98 days",
+            "surface temp." => "−143°C/35°C",
         ],
-        "news" => [
-            "Mars est trop cool",
-            "C'est de la bombe",
-            "J'adore",
-            "C'est cool",
-            "Si on vis dessus",
-        ]
+        "news1" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "news2" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "news3" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "news4" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "color" => "#CE6745"
     ],
     "jupiter" => [
         "description" => [
@@ -109,13 +181,31 @@ $planets = [
             "orbital period" => "4 332.59 days",
             "surface temp." => "-108.15°C",
         ],
-        "news" => [
-            "Jupiter est trop cool",
-            "C'est de la bombe",
-            "J'adore",
-            "C'est cool",
-            "Si on vis dessus",
-        ]
+        "news1" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "news2" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "news3" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "news4" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "color" => "#A68160"
     ],
     "saturn" => [
         "description" => [
@@ -129,13 +219,31 @@ $planets = [
             "orbital period" => "10 759.22 days",
             "surface temp." => "-139.15°C",
         ],
-        "news" => [
-            "Saturn est trop cool",
-            "C'est de la bombe",
-            "J'adore",
-            "Elle a des anneaux",
-            "Mais pas là",
-        ]
+        "news1" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "news2" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "news3" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "news4" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "color" => "#E1CC97"
     ],
     "uranus" => [
         "description" => [
@@ -149,13 +257,31 @@ $planets = [
             "orbital period" => "30 688.5 days",
             "surface temp." => "−197.15°C",
         ],
-        "news" => [
-            "Uranus est trop cool",
-            "C'est de la bombe",
-            "J'adore",
-            "C'est cool",
-            "On peut faire des jeux de mots géniaux avec son nom",
-        ]
+        "news1" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "news2" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "news3" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "news4" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "color" => "#7EA8AE"
     ],
     "neptune" => [
         "description" => [
@@ -169,13 +295,31 @@ $planets = [
             "orbital period" => "60 195 days",
             "surface temp." => "-201.15°C",
         ],
-        "news" => [
-            "Neptune est trop cool",
-            "C'est de la bombe",
-            "Quand il agite son trident",
-            "C'est cool",
-            "Si on vis dessus on meurt écraser (cool)",
-        ]
+        "news1" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "news2" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "news3" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "news4" => [
+            "src" => "/images/JamesWebb.jpg",
+            "alt" => "Mercury",
+            "h3" => "James Webb is ready : ",
+            "text" => "The space telescope of all superlatives is ready to take off under the hood of an Ariane 6.",
+        ],
+        "color" => "#417DD3"
     ],
 ];
 
