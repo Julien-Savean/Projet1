@@ -7,10 +7,11 @@
             name="viewport"
             content="width=device-width, initial-scale=1.0"
     />
-    <title>Document</title>
+    <title>Solar System</title>
     <link rel="stylesheet" href="/styles/home.css"/>
     <link rel="styleSheet" href="/styles/homeBackground.css"/>
     <link rel="stylesheet" href="/styles/img/rotation/home-planets-rotation.css"/>
+    <link rel="stylesheet" href="/styles/animation.css"/>
 </head>
 <body>
 
@@ -32,6 +33,7 @@
         <p>Neptune</p>
     </div>
 </div>
+
 <div class="planets-container">
     <img src="" id="sun" alt="Sun"/> <!--La src se lance dans home.js-->
     <div id="mercury"></div>
