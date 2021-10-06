@@ -48,7 +48,7 @@ if (isset($planets) && $planets[$planet]) {
     <section class="mainpage">
 
         <!-- Main title of the page -->
-        <?= "<h1> $planet </h1>" ?>
+         <h1 style='color: <?=$planetInfos["color"]?>; text-shadow: <?=$planetInfos["color"]?> 10px -5px 20px'> <?=$planet?> </h1> 
 
         <section class=sectionInfos>
 
@@ -56,7 +56,7 @@ if (isset($planets) && $planets[$planet]) {
             <?= "<div id=\"$planet\"></div>" ?>
 
             <!-- inject features from database array-->
-            <div class="characteristicsBloc">
+            <div class="characteristicsBloc" style='border-color: <?=$planetInfos["color"]?>'>
                 <ul>
                     <?= "<li><u>Satellites:</u> " . $planetInfos["features"]["satellites"] . "</li>
                 <li><u>Mass:</u> " . $planetInfos["features"]["mass"] . "</li>
@@ -68,7 +68,7 @@ if (isset($planets) && $planets[$planet]) {
             </div>
 
             <!-- inject description from database array -->
-            <div class="presentationBloc">
+            <div class="presentationBloc" style='border-color: <?=$planetInfos["color"]?>'>
                 <?php echo "<p>" . $planetInfos["description"][0] . "</p>" ?>
                 <?php echo "<p>" . $planetInfos["description"][1] . "</p>" ?>
             </div>
@@ -79,13 +79,29 @@ if (isset($planets) && $planets[$planet]) {
         <section class="news">
             <!-- inject news from database array -->
             <h2>Current events:</h2>
-            <?=
-            "<article class=articles>" . $planetInfos["news"][0] . "</article>
-        <article class=articles> " . $planetInfos["news"][1] . "</article>
-        <article class=articles> " . $planetInfos["news"][2] . "</article>
-        <article class=articles> " . $planetInfos["news"][3] . "</article>
-        <article class=articles> " . $planetInfos["news"][4] . "</article>"
-            ?>
+        
+            <article class="articles" style='border-color: <?=$planetInfos["color"]?>'> 
+                    <img class="imgNews" src="<?=$planetInfos["news1"]["src"]?>" alt="<?=$planetInfos["news1"]["alt"]?>"></img>
+                    <h3><?=$planetInfos["news1"]["h3"]?></h3>
+                    <div class="textNews"><?=$planetInfos["news1"]["text"]?></div>
+            </article>
+            <article class="articles" style='border-color: <?=$planetInfos["color"]?>'> 
+                    <img class="imgNews" src="<?=$planetInfos["news2"]["src"]?>" alt="<?=$planetInfos["news2"]["alt"]?>"></img>
+                    <h3><?=$planetInfos["news2"]["h3"]?></h3>
+                    <div class="textNews"><?=$planetInfos["news2"]["text"]?></div>
+            </article>
+            <article class="articles" style='border-color: <?=$planetInfos["color"]?>'> 
+                    <img class="imgNews" src="<?=$planetInfos["news3"]["src"]?>" alt="<?=$planetInfos["news3"]["alt"]?>"></img>
+                    <h3><?=$planetInfos["news3"]["h3"]?></h3>
+                    <div class="textNews"><?=$planetInfos["news3"]["text"]?></div>
+            </article>
+            <article class="articles" style='border-color: <?=$planetInfos["color"]?>'> 
+                    <img class="imgNews" src="<?=$planetInfos["news4"]["src"]?>" alt="<?=$planetInfos["news4"]["alt"]?>"></img>
+                    <h3><?=$planetInfos["news4"]["h3"]?></h3>
+                    <div class="textNews"><?=$planetInfos["news4"]["text"]?></div>
+            </article>
+
+          
         </section>
     </section>
 

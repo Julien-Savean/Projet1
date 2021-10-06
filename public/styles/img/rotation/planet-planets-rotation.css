@@ -5,8 +5,8 @@
 #mercury {
     margin: 1.5rem;
     z-index: 1;
-    width: 12rem;
-    height: 12rem;
+    width: 9rem;
+    height: 9rem;
     background: url("../textures/mercury2k.jpg");
     border-radius: 50%;
     background-size: 200%;
@@ -23,8 +23,8 @@
 #venus {
     margin: 1.5rem;
     z-index: 1;
-    width: 12rem;
-    height: 12rem;
+    width: 9rem;
+    height: 9rem;
     background: url("../textures/venus2k.jpg");
     border-radius: 50%;
     background-size: 200%;
@@ -41,8 +41,8 @@
 #earth {
     margin: 1.5rem;
     z-index: 1;
-    width: 12rem;
-    height: 12rem;
+    width: 9rem;
+    height: 9rem;
     background: url("../textures/earth2k.jpg");
     border-radius: 50%;
     background-size: 200%;
@@ -59,8 +59,8 @@
 #mars {
     margin: 1.5rem;
     z-index: 1;
-    width: 12rem;
-    height: 12rem;
+    width: 9rem;
+    height: 9rem;
     background: url("../textures/mars2k.jpg");
     border-radius: 50%;
     background-size: 200%;
@@ -77,8 +77,8 @@
 #jupiter {
     margin: 1.5rem;
     z-index: 1;
-    width: 12rem;
-    height: 12rem;
+    width: 9rem;
+    height: 9rem;
     background: url("../textures/jupiter2k.jpg");
     border-radius: 50%;
     background-size: 200%;
@@ -95,8 +95,8 @@
 #saturn {
     margin: 1.5rem;
     z-index: 1;
-    width: 12rem;
-    height: 12rem;
+    width: 9rem;
+    height: 9rem;
     background: url("../textures/saturn2k.jpg");
     border-radius: 50%;
     background-size: 200%;
@@ -113,8 +113,8 @@
 #uranus {
     margin: 1.5rem;
     z-index: 1;
-    width: 12rem;
-    height: 12rem;
+    width: 9rem;
+    height: 9rem;
     background: url("../textures/duranustexture.jpg");
     border-radius: 50%;
     background-size: 200%;
@@ -131,8 +131,8 @@
 #neptune {
     margin: 1.5rem;
     z-index: 1;
-    width: 12rem;
-    height: 12rem;
+    width: 9rem;
+    height: 9rem;
     background: url("../textures/dnepturetexture.jpg");
     border-radius: 50%;
     background-size: 200%;
@@ -148,17 +148,126 @@
 
 
 @media only screen and (min-width: 700px) {
-
+    #mercury {
+        width: 20rem;
+        height: 20rem;
+    }
+    #venus {
+        width: 20rem;
+        height: 20rem;
+    }
+    #earth {
+        width: 12rem;
+        height: 12rem;
+    }
+    #mars {
+        width: 20rem;
+        height: 20rem;
+    }
+    #jupiter {
+        width: 20rem;
+        height: 20rem;
+    }
+    #saturn {
+        width: 20rem;
+        height: 20rem;
+    }
+    #uranus {
+        width: 20rem;
+        height: 20rem;
+    }
+    #neptune {
+        width: 20rem;
+        height: 20rem;
+    }
 
 }
 
 @media only screen and (min-width: 1200px) {
-
+#mercury {
+    width: 15rem;
+    height: 15rem;
+    justify-self: left;
+}
+#venus {
+    width: 15rem;
+    height: 15rem;
+    justify-self: left;
+}
+#earth {
+    width: 15rem;
+    height: 15rem;
+    justify-self: left;
+}
+#mars {
+    width: 15rem;
+    height: 15rem;
+    justify-self: left;
+}
+#jupiter {
+    width: 15rem;
+    height: 15rem;
+    justify-self: left;
+}
+#saturn {
+    width: 15rem;
+    height: 15rem;
+    justify-self: left;
+}
+#uranus {
+    width: 15rem;
+    height: 15rem;
+    justify-self: left;
+}
+#neptune {
+    width: 15rem;
+    height: 15rem;
+    justify-self: left;
+}
 
 }
 
 @media only screen and (min-width: 1500px) {
-
+    #mercury {
+        width: 20rem;
+        height: 20rem;
+        justify-self: left;
+    }
+    #venus {
+        width: 20rem;
+        height: 20rem;
+        justify-self: left;
+    }
+    #earth {
+        width: 20rem;
+        height: 20rem;
+        justify-self: left;
+    }
+    #mars {
+        width: 20rem;
+        height: 20rem;
+        justify-self: left;
+    }
+    #jupiter {
+        width: 20rem;
+        height: 20rem;
+        justify-self: left;
+    }
+    #saturn {
+        width: 20rem;
+        height: 20rem;
+        justify-self: left;
+    }
+    #uranus {
+        width: 20rem;
+        height: 20rem;
+        justify-self: left;
+    }
+    #neptune {
+        width: 20rem;
+        height: 20rem;
+        justify-self: left;
+    }
 
 }
 
