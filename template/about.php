@@ -58,37 +58,36 @@
 
         <form action="toto.php" method="post">
 
-            <fieldset>
-                <legend> What about Space :</legend>
-                <p>Do you have a Telescope ? : </p>
-                <input type="radio" name="CSS" value="oui" id="oui"
-                       checked="checked"/>
+            <fieldset class="block1">
+                <legend class="title"> What about Space :</legend>
+                <p class="para">Was the website helpful to you?</p>
+                <input type="radio" name="CSS" value="oui" id="oui" checked="checked"/>
                 <label for="oui" class="inline">yes</label>
                 <input type="radio" name="CSS" value="non" id="non"/>
                 <label for="non" class="inline">no</label>
 
-                <label for="utilise">If so, do you use them : </label>
+                <label class ="para2" for="utilise">What do you think?</label>
                 <select name="utilise" id="utilise">
-                    <option value="toujours"> always</option>
-                    <option value="parfois"> sometimes</option>
-                    <option value="jamais"> never</option>
+                    <option value="toujours">Awesome</option>
+                    <option value="parfois">It's okay</option>
+                    <option value="jamais">Not at all</option>
                 </select>
             </fieldset>
 
             <fieldset>
-                <legend>About you :</legend>
-                <label for="email">Your email :</label>
+                <legend class="title">About you :</legend>
+                <label class="para3" for="email">Your email :</label>
                 <input type="email" name="email" size="20"
                        maxlength="40" value="email" id="email"/>
 
-                <label for="comments">Your comments :</label>
+                <label class="para4" for="comments">Your comments :</label>
                 <textarea name="comments" id="comments" cols="20" rows="4">
                        </textarea>
             </fieldset>
 
             <p>
                 <input type="submit" value="Send"/>
-                <input type="reset" value="Canceled"/>
+                
             </p>
 
         </form>
