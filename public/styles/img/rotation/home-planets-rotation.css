@@ -4,6 +4,11 @@
     --scale: 1;
 }
 
+.allPlanets{
+    opacity: 1;
+    transition: opacity 2000ms linear;
+}
+
 #mercury {
     margin: var(--marginPlanet);
     z-index: 1;
