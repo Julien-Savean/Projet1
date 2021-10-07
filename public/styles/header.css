@@ -54,7 +54,7 @@ li {
   padding: 0;
   margin: 0.5rem;
   cursor: pointer;
-  font-family: "textFont";
+  font-family: "titleFont";
   z-index: 1;
 }
 
