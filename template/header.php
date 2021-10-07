@@ -4,7 +4,7 @@
             <p class="menu-items">Home</p>
         </li>
         <li class="liHeader1">
-            <p class="menu-items">Planet</p>
+            <p class="menu-items">Planets</p>
         </li>
         <li class="liHeader2">
             <p class="menu-items">About</p>
