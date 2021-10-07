@@ -175,6 +175,7 @@ a {
 
     .home {
         z-index: 2;
+        color: white;
         padding: 1rem;
         font-size: 1.5rem;
         cursor: pointer;
@@ -186,6 +187,7 @@ a {
 
     .about {
         z-index: 2;
+        color: white;
         padding: 1rem;
         font-size: 1.5rem;
         cursor: pointer;
