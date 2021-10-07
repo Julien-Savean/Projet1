@@ -70,7 +70,8 @@ a {
     z-index: 1;
     position: absolute;
     top: 0;
-    width: 150vw;
+    left: 0;
+    width: 100%;
     height: auto;
     margin: 0;
     padding: 0;
@@ -151,7 +152,6 @@ a {
 }
 
 
-
 /*breakpoint*/
 @media only screen and (min-width: 1100px) {
     .menu {
@@ -209,7 +209,7 @@ a {
         margin-top: 0;
         display: grid;
         grid-template-rows: 32% auto 32%;
-        grid-template-columns: auto 7rem repeat(7, auto) 2rem;
+        grid-template-columns: auto 8rem repeat(7, auto) 2rem;
         /**
             p = mercure
             e = earth
