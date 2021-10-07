@@ -26,6 +26,8 @@ if ('/' === $urlPath) {
     require __DIR__ . '/../template/about.php';
 } else if ('/planet' === $urlPath) {
     require __DIR__ . '/../template/planet.php';
+}else if ('/thanks' === $urlPath) {
+    require __DIR__ . '/../template/thanks.php';
 }else {
     require __DIR__ . '/../template/error404.php';
 }
