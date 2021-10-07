@@ -23,10 +23,12 @@
     </svg>
 </div>
 
+
 <div class="planets-container">
+    <img src="" id="sun" alt="Sun"/> <!--La src se lance dans home.js-->
     <a href="./" class="home">Home</a>
     <a href="./about" class="about">About</a>
-    <img src="" id="sun" alt="Sun"/> <!--La src se lance dans home.js-->
+
     <div id="mercury"></div>
     <div id="venus"></div>
     <div id="earth"></div>
