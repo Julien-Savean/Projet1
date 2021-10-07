@@ -21,13 +21,17 @@
 
 <?php include "header.php" ?>
 
-<h1>The space is so cool!!!</h1>
-<div class="container">
+<h1>The space is so cool !!!</h1>
+
+<div class="maincontainer">
 
     <div class="cpictures">
         <img src="/images/mars-attacks.jpg" alt="alien">
         <img src="/images/vessel.jpg" alt="vaisseau">
     </div>
+
+
+<div class="textformcontainer">
     <div class="ctext">
         <p>I'm sure the universe is full of intelligent life. It's just been too intelligent to come here. The Earth
             is the cradle of humanity, but mankind cannot stay in the cradle forever. Those who came before us made
@@ -38,7 +42,7 @@
             see it governed by a hostile flag of conquest, but by a banner of freedom and peace. We have vowed that
             we shall not see space filled with weapons of mass destruction, but with instruments of knowledge and
             understanding.</p>
-        <br>
+        
         <p>At an average distance of 140 million miles, Mars is one of Earth's closest habitable neighbors.
             Mars is about half again as far from the Sun as Earth is, so it still has decent sunlight.
             It is a little cold, but we can warm it up. Its atmosphere is primarily CO2 with some nitrogen and
@@ -46,7 +50,7 @@
             atmosphere.
             Gravity on Mars is about 38% of that of Earth, so you would be able to lift heavy things and bound around.
             Furthermore, the day is remarkably close to that of Earth.</p>
-        <br><br>
+        
         <p>For the first time ever, the European Space Agency is sending a rover to Mars.
             This historic rover is named after a British chemist and X-ray crystallographer, Rosalind Franklin and will
             focus on the search for past or present life beneath the Martian surface.
@@ -55,18 +59,21 @@
             such as the planned Mars Sample Return mission. The rover will also carry the largest drill (2 metres long)
             ever sent to Mars,
             in order to retrieve soil samples that may contain evidence of microbial life deep below the surface.</p>
-
+    </div>
+    <div class="formulary">
         <form action="toto.php" method="post">
 
             <fieldset class="block1">
-                <legend class="title"> What about Space :</legend>
-                <p class="para">Was the website helpful to you?</p>
-                <input type="radio" name="CSS" value="oui" id="oui" checked="checked"/>
-                <label for="oui" class="inline">yes</label>
-                <input type="radio" name="CSS" value="non" id="non"/>
-                <label for="non" class="inline">no</label>
+                <legend class="title"> What about Space: </legend>
+                <p class="para">Was the website helpful to you ?</p>
+                    <div class="buttons">
+                         <input type="radio" name="CSS" value="oui" id="oui" checked="checked"/>
+                        <label for="oui" class="inline">Yes</label>
+                        <input type="radio" name="CSS" value="non" id="non"/>
+                        <label for="non" class="inline">No</label>
+                    </div>
 
-                <label class ="para2" for="utilise">What do you think?</label>
+                <label class ="para2" for="utilise">What do you think ?</label>
                 <select name="utilise" id="utilise">
                     <option value="toujours">Awesome</option>
                     <option value="parfois">It's okay</option>
@@ -75,22 +82,21 @@
             </fieldset>
 
             <fieldset>
-                <legend class="title">About you :</legend>
-                <label class="para3" for="email">Your email :</label>
+                <legend class="title">About you:</legend>
+                <label class="para3" for="email">Your email:</label>
                 <input type="email" name="email" size="20"
-                       maxlength="40" value="email" id="email"/>
+                       maxlength="40" id="emailabout"/>
 
-                <label class="para4" for="comments">Your comments :</label>
+                <label class="para4" for="comments">Your comments:</label>
                 <textarea name="comments" id="comments" cols="20" rows="4">
                        </textarea>
             </fieldset>
 
-            <p>
-                <input type="submit" value="Send"/>
-                
-            </p>
-
+            <div class="submit">
+                <input type="submit" value="Send"/>   
+            </div>
         </form>
+    </div>
     </div>
 </div>
 
