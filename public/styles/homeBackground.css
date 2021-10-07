@@ -1,32 +1,165 @@
 .stars,
 .twinkl {
-     position:fixed;
-     top: 0;
-     left: 0;
-     right: 0;
-     bottom: 0;
-     width: 100%;
-     height: 100%;
-     display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
 }
+
 .stars {
-     background: #000
-          url("img/textures/dtwinklebackground.png") repeat top
-          center;
-     z-index: 0;
+    background: #000 url("img/textures/dtwinklebackground.png") repeat top center;
+    z-index: 0;
 }
+
 .twinkl {
-     background: transparent
-          url("img/textures/dtwinklestars.png") repeat top
-          center;
-     z-index: 0;
-     animation: move-twink-back 500s linear infinite;
+    background: transparent url("img/textures/dtwinklestars.png") repeat top center;
+    z-index: 0;
+    animation: move-twink-back 500s linear infinite;
 }
+
 @keyframes move-twink-back {
-     from {
-          background-position: 0 0;
-     }
-     to {
-          background-position: -10000px 5000px;
-     }
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+
+
+.night {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg);
+}
+
+
+.shooting_star {
+    z-index: 1;
+    position: absolute;
+    left: 75%;
+    top: 50%;
+    height: 2px;
+    background: linear-gradient(-45deg, white, rgba(0, 0, 255, 0));
+    border-radius: 999px;
+    filter: drop-shadow(0 0 6px white);
+    animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
+}
+
+.shooting_star::before, .shooting_star::after {
+    content: "";
+    position: absolute;
+    top: calc(75% - 1px);
+    right: 0;
+    height: 2px;
+    background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #5f91ff, rgba(0, 0, 255, 0));
+    transform: translateX(-75%) rotateZ(-45deg);
+    border-radius: 100%;
+    animation: shining 3000ms ease-in-out infinite;
+}
+
+.shooting_star::after {
+    transform: translateX(-75%) rotateZ(45deg);
+}
+
+.shooting_star:nth-child(1) {
+    top: calc(75% - -119px);
+    left: calc(90% - 43px);
+    animation-delay: 4796ms;
+}
+
+.shooting_star:nth-child(1)::before,
+.shooting_star:nth-child(1)::after {
+    animation-delay: 4796ms;
+}
+
+.shooting_star:nth-child(2) {
+    top: calc(75% - -43px);
+    left: calc(90% - 37px);
+    animation-delay: 5944ms;
+}
+
+.shooting_star:nth-child(2)::before,
+.shooting_star:nth-child(2)::after {
+    animation-delay: 5944ms;
+}
+
+.shooting_star:nth-child(3) {
+    top: calc(75% - -40px);
+    left: calc(90% - 222px);
+    animation-delay: 7556ms;
+}
+
+.shooting_star:nth-child(3)::before,
+.shooting_star:nth-child(3)::after {
+    animation-delay: 7556ms;
+}
+
+.shooting_star:nth-child(4) {
+    top: calc(75% - -29px);
+    left: calc(90% - 113px);
+    animation-delay: 7123ms;
+}
+
+.shooting_star:nth-child(4)::before,
+.shooting_star:nth-child(4)::after {
+    animation-delay: 7123ms;
+}
+
+.shooting_star:nth-child(5) {
+    top: calc(75% - 146px);
+    left: calc(90% - 112px);
+    animation-delay: 3629ms;
+}
+
+.shooting_star:nth-child(5)::before,
+.shooting_star:nth-child(5)::after {
+    animation-delay: 3629ms;
+}
+
+
+
+
+@keyframes tail {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100px;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+
+@keyframes shining {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 30px;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+
+@keyframes shooting {
+    0% {
+
+        transform: translateX(0);
+    }
+    100% {
+
+        transform: translateX(300px);
+    }
 }

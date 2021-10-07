@@ -14,7 +14,16 @@
 </head>
 <body>
 
-<div class="stars"></div>
+<div class="stars">
+    <div class="night">
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+    </div>
+
+</div>
 <div class="twinkl"></div>
 
 <div class="menu">
@@ -22,7 +31,6 @@
         <path d="M5.333 22.667h21.333v-2.667h-21.333v2.667zM5.333 17.333h21.333v-2.667h-21.333v2.667zM5.333 9.333v2.667h21.333v-2.667h-21.333z"></path>
     </svg>
 </div>
-
 
 <div class="planets-container">
     <img src="" id="sun" alt="Sun"/> <!--La src se lance dans home.js-->
