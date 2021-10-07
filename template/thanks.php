@@ -9,14 +9,21 @@
     />
     <title>Thanks</title>
     <link rel="stylesheet" href="/styles/thanks.css"/>
+    <link rel="stylesheet" href="/styles/homeBackground.css"/>
 </head>
+
+<script>
+    const html = document.querySelector('html');
+    html.addEventListener('click', function () {
+        window.location.href = "./about";
+    })
+</script>
 <body>
-<div class="starwars-demo">
+<div class="twinkl"></div>
+<div class="stars"></div>
+<div class="thanksContainer">
     <h2 class="byline" id="byline">Thanks</h2>
-
 </div>
-
-
 </body>
 
 <script src="/thanks.js"></script>

@@ -1,12 +1,23 @@
+@font-face {
+    font-family: "titleFont";
+    src: url("./font/Anita\ semi\ square.ttf") format("woff2");
+}
+
+@font-face {
+    font-family: "textFont";
+    src: url("./font/Anita\ semi\ square.ttf");
+}
+
+
 .byline span {
     animation: spin-letters 10s linear infinite;
 }
 .byline {
-    animation: star 10s linear infinite;
+    animation: goAway 10s linear infinite;
 }
 
 /* Keyframes */
-@keyframes star {
+@keyframes goAway {
     0% {
         opacity: 0;
         transform: scale(1.5) translateY(-0.75em);
@@ -59,31 +70,20 @@
     }
 }
 
-@keyframes move-byline {
-    0% {
-        transform: translateZ(5em);
-    }
-    100% {
-        transform: translateZ(0);
-    }
-}
 
-/* Make the 3D work on the container */
-.starwars-demo {
+
+.thanksContainer {
+    z-index: 1;
     perspective: 800px;
-    transform-style: preserve3d;
+    transform-style: preserve-3d;
 }
 
-/* General styles and layout */
-body {
-    background: #000 url(//cssanimation.rocks/demo/starwars/images/bg.jpg);
-}
-
-.starwars-demo {
+.thanksContainer {
+    z-index: 1;
     height: 17em;
-    left: 50%;
+    left: 52%;
     position: absolute;
-    top: 53%;
+    top: 40%;
     transform: translate(-50%, -50%);
     width: 34em;
 }
@@ -92,9 +92,6 @@ body {
     display: inline-block;
 }
 
-img {
-    width: 100%;
-}
 
 .byline {
     position: absolute;
@@ -102,9 +99,10 @@ img {
 
 
 .byline {
+    z-index: 1;
     color: #fff;
-    font-family: "ITC Serif Gothic", Lato;
-    font-size: 2.25em;
+    font-family: "titleFont", Lato;
+    font-size: 10em;
     left: -2em;
     letter-spacing: 0.4em;
     right: -2em;
@@ -116,13 +114,13 @@ img {
 /*** Media queries for adjusting to different screen sizes ***/
 
 @media only screen and (max-width: 600px) {
-    .starwars-demo {
+    .thanksContainer {
         font-size: 10px;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .starwars-demo {
+    .thanksContainer {
         font-size: 7px;
     }
 }
