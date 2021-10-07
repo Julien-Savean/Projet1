@@ -90,11 +90,11 @@ function mouseOverMenuDesktop(event) {
     planetName.classList.add('planetName');
     planetName.id = `${planet.id}t`;
     planetName.style.gridArea = `${planet.id}t`;
-    planetName.style.fontSize = "18px";
+    planetName.style.fontSize = "1.5rem";
     planetName.innerHTML = planet.id;
     planetContainer.appendChild(planetName).animate([
             {height: "150%", easing: 'ease-in-out', opacity: 0},
-            {height: "10%", opacity: "1"}],
+            {height: "15%", opacity: "1"}],
         1000);
 
 }
