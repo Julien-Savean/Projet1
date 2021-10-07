@@ -7,7 +7,9 @@
   font-family: "textFont";
   src: url("./font/Anita\ semi\ square.ttf");
 }
-
+header {
+  margin-bottom: 1rem;
+}
 li {
   list-style-type: none;
 }
@@ -413,6 +415,15 @@ li {
 }
 
 @media only screen and (max-width: 500px) {
+
+  #menuPlanets {
+    grid-template-areas:
+    "mercury mercury venus venus earth earth"
+    "mars mars jupiter jupiter saturn saturn"
+    "uranus uranus uranus neptune neptune neptune";
+  }
+
+
   #imgMercury {
     width: 4.8rem;
     height: 4.8rem;
@@ -455,5 +466,9 @@ li {
 
   .h4Planet {
     font-size: 0.8rem;
+  }
+
+  .menu-items {
+    font-size: 1.4rem;
   }
 }
