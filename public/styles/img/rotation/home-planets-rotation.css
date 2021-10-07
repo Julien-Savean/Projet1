@@ -308,7 +308,7 @@
     }
 
     #jupiter:hover {
-        transform: scale(calc(var(--scale) * 1));
+        transform: scale(calc(var(--scale) * 0.9));
     }
 
     #saturn {
@@ -395,7 +395,7 @@
     }
 
     #jupiter:hover {
-        transform: scale(calc(var(--scale) * 0.7));
+        transform: scale(calc(var(--scale) * 0.65));
     }
 
     #saturn {
