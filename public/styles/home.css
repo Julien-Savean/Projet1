@@ -12,6 +12,7 @@
 a {
     text-decoration: none;
     color: cornsilk;
+    padding: 0.5rem;
 }
 
 .menu {
@@ -38,12 +39,15 @@ a {
 }
 
 .home.homeMenu {
+    padding: 0.5rem;
+    font-size: 1rem;
     z-index: 2;
     cursor: pointer;
     grid-area: home;
     justify-self: end;
-    align-self: start;
+    align-self: center;
     display: block;
+    animation: opacity 250ms;
 }
 
 .about {
@@ -51,12 +55,15 @@ a {
 }
 
 .about.aboutMenu {
+    padding: 0.5rem;
+    font-size: 1rem;
     z-index: 2;
     cursor: pointer;
     grid-area: about;
     justify-self: start;
-    align-self: start;
+    align-self: center;
     display: block;
+    animation: opacity 250ms;
 }
 
 #sun {
@@ -75,7 +82,7 @@ a {
     color: white;
     display: grid;
     grid-template-rows: 7rem repeat(8, auto);
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     /**
         p = mercure
         e = earth
@@ -144,6 +151,7 @@ a {
 }
 
 
+
 /*breakpoint*/
 @media only screen and (min-width: 1100px) {
     .menu {
@@ -174,7 +182,7 @@ a {
         display: block;
     }
 
-    .about{
+    .about {
         z-index: 2;
         cursor: pointer;
         justify-self: center;
@@ -201,7 +209,7 @@ a {
         margin-top: 0;
         display: grid;
         grid-template-rows: 32% auto 32%;
-        grid-template-columns: 5rem repeat(8, auto) 2rem;
+        grid-template-columns: auto 7rem repeat(7, auto) 2rem;
         /**
             p = mercure
             e = earth
@@ -267,7 +275,16 @@ a {
         grid-template-rows: 28% auto 28%;
         margin-top: 0;
     }
-
 }
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
 

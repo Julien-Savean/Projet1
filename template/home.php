@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="/styles/home.css"/>
     <link rel="styleSheet" href="/styles/homeBackground.css"/>
     <link rel="stylesheet" href="/styles/img/rotation/home-planets-rotation.css"/>
-    menu
-    <link rel="stylesheet" href="/styles/animation.css"/>
 </head>
 <body>
 
@@ -26,11 +24,8 @@
 </div>
 
 <div class="planets-container">
-
     <a href="./" class="home">Home</a>
     <a href="./about" class="about">About</a>
-
-
     <img src="" id="sun" alt="Sun"/> <!--La src se lance dans home.js-->
     <div id="mercury"></div>
     <div id="venus"></div>
@@ -44,5 +39,5 @@
 
 </body>
 <script src="/home.js"></script>
-<!--<script src="/menuHome.js"></script>-->
+
 </html>
