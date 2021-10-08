@@ -61,7 +61,7 @@
             in order to retrieve soil samples that may contain evidence of microbial life deep below the surface.</p>
     </div>
     <div class="formulary">
-        <form action="toto.php" method="post">
+        <form action="/thanks" method="post">
 
             <fieldset class="block1">
                 <legend class="title"> What about Space: </legend>
