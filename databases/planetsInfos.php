@@ -134,7 +134,7 @@ $planets = [
                 the Solar System. The smooth Borealis basin in the Northern Hemisphere covers 40% of the planet and
                 may be a giant impact feature. Mars has two moons, Phobos and Deimos, which are small and
                 irregularly shaped.
-                These may be captured asteroids, similar to 5261 Eureka, a Mars trojan.Mars has been explored by several uncrewed spacecraft. Mariner 4 was the first spacecraft to visit Mars; launched by NASA on 28 November 1964, it made its closest approach to the planet on 15 July 1965. Mariner 4 detected the weak Martian radiation belt, measured at about 0.1% that of Earth, and captured the first images of another planet from deep space.[24] The Soviet Mars 3 mission included a lander, which achieved a soft landing in December 1971; however, contact was lost seconds after touchdown."
+                These may be captured asteroids, similar to 5261 Eureka, a Mars trojan.Mars has been explored by several uncrewed spacecraft. Mariner 4 was the first spacecraft to visit Mars; launched by NASA on 28 November 1964, it made its closest approach to the planet on 15 July 1965. Mariner 4 detected the weak Martian radiation belt, measured at about 0.1% that of Earth, and captured the first images of another planet from deep space. The Soviet Mars 3 mission included a lander, which achieved a soft landing in December 1971; however, contact was lost seconds after touchdown."
         ],
         "features" => [
             "satellites" => "2",
