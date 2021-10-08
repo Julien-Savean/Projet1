@@ -9,22 +9,24 @@
 }
 
 .imgFooter {
+    cursor: pointer;
     z-index: 1;
     width: 2em;
     height: 2rem;
     border-radius: 45%;
     margin-right: 1.5rem;
+    border: 1px solid white
 }
 
-#liFooterEmail:hover ~ #email {
+#liFooterEmail ~ #email {
     animation: logo_animation 3s infinite;
 }
 
-#liFooterLinkedin:hover ~ #linkedin {
+#liFooterLinkedin ~ #linkedin {
     animation: logo_animation 3s infinite;
 }
 
-#liFooterGithub:hover ~ #github {
+#liFooterGithub ~ #github {
     animation: logo_animation 3s infinite;
 }
 
@@ -106,7 +108,7 @@ a {
         box-shadow: 1px 1px 4px white;
     }
     50% {
-        box-shadow: 1px 1px 11px rgb(102, 102, 101);
+        box-shadow: 5px 5px 9px rgb(102, 102, 101);
     }
     100% {
         box-shadow: 1px 1px 4px white; 
@@ -142,6 +144,31 @@ a {
     .icons {
         font-size: 1.2rem;
     }
+
+    .liFooter:hover ~ li p {
+        animation: none;
+    }
+
+    .liFooter:hover {
+        animation: none;
+    }
+
+    @keyframes logo_animation {
+        0% {
+    
+            box-shadow: 1px 1px 2px white;
+        }
+        50% {
+            box-shadow: 1px 1px 7px rgb(102, 102, 101);
+        }
+        100% {
+            box-shadow: 1px 1px 2px white; 
+        }
+    }
+
+    
+
+    
     
 
 }

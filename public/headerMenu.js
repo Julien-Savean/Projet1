@@ -39,3 +39,25 @@ for (let i = 0; i < imgPlanete.length; i++) {
           window.location.href = `./planet?planet=${imgPlanete[i].innerHTML.toLowerCase()}`;
      })
 }
+
+const imgGithub = document.querySelector("#github"); 
+
+imgGithub.addEventListener('click', function() {
+      window.location.href = "https://github.com/Julien-Savean/Projet1";
+})
+
+const imgLinkedin = document.querySelector("#linkedin"); 
+
+imgLinkedin.addEventListener('click', function() {
+      window.location.href = "https://www.linkedin.com/school/wild-code-school#:~:text=Wild%20Code%20School%20%7C%2011%2C806%20followers%20on%20LinkedIn.,at%2020%2B%20campuses%2C%20remotely%20or%20at%20company%E2%80%99s%20offices.";
+})
+
+const imgEmail = document.querySelector("#email"); 
+
+imgEmail.addEventListener('click', function() {
+      window.location.href = "https://www.youtube.com/embed/RRq_MvT33pA?start=6&rel=0&autoplay=1";
+})
+
+
+
+
