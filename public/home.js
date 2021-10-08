@@ -6,13 +6,13 @@ const sun = document.querySelector('#sun');
 if (window.matchMedia("(min-width: 1100px)").matches) {
     sun.src = "./styles/img/textures/dvertical-sun.png";
 } else if (window.matchMedia("(max-width: 1100px)").matches) {
-    sun.src = "./styles/img/textures/dhorizontal-sun2.png";
+    sun.src = "./styles/img/textures/dhorizontal-sun3.png";
 }
 window.addEventListener('resize', function () {
     if (window.matchMedia("(min-width: 1100px)").matches) {
         sun.src = "./styles/img/textures/dvertical-sun.png";
     } else if (window.matchMedia("(max-width: 1100px)").matches) {
-        sun.src = "./styles/img/textures/dhorizontal-sun2.png";
+        sun.src = "./styles/img/textures/dhorizontal-sun3.png";
     }
 })
 
