@@ -37,7 +37,7 @@
             is the cradle of humanity, but mankind cannot stay in the cradle forever. Those who came before us made
             certain that this country rode the first waves of the industrial revolutions, the first waves of modern
             invention, and the first wave of nuclear power, and this generation does not intend to founder in the
-            backwash of the coming age of space. We mean to be a part of it--we mean to lead it. For the eyes of the
+            backwash of the coming age of space. We mean to be a part of it, we mean to lead it. For the eyes of the
             world now look into space, to the moon and to the planets beyond, and we have vowed that we shall not
             see it governed by a hostile flag of conquest, but by a banner of freedom and peace. We have vowed that
             we shall not see space filled with weapons of mass destruction, but with instruments of knowledge and
@@ -56,9 +56,8 @@
             focus on the search for past or present life beneath the Martian surface.
             The Rosalind Franklin rover is the second part of the ExoMars programme. It will demonstrate the feasibility
             of several technologies that are essential for future exploration missions,
-            such as the planned Mars Sample Return mission. The rover will also carry the largest drill (2 metres long)
-            ever sent to Mars,
-            in order to retrieve soil samples that may contain evidence of microbial life deep below the surface.</p>
+            such as the planned Mars Sample Return mission. The rover will also carry the largest drill ever sent to Mars,
+            In order to retrieve soil samples that may contain evidence of microbial life deep below the surface.</p>
     </div>
     <div class="formulary">
         <form action="/thanks" method="post">

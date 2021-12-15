@@ -86,7 +86,7 @@ $planets = [
         ],
         "features" => [
             "satellites" => "1",
-            "mass" => "	5.97237×1024²⁴ kg",
+            "mass" => "	5.97237×10²⁴ kg",
             "volume" => "1.08321×10¹² km³",
             "orbital period" => "365.26 days",
             "surface temp." => "−89.2°C/56.7°C",
