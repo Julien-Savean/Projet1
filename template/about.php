@@ -55,8 +55,7 @@
             This historic rover is named after a British chemist and X-ray crystallographer, Rosalind Franklin and will
             focus on the search for past or present life beneath the Martian surface.
             The Rosalind Franklin rover is the second part of the ExoMars programme. It will demonstrate the feasibility
-            of several technologies that are essential for future exploration missions,
-            such as the planned Mars Sample Return mission. The rover will also carry the largest drill ever sent to Mars,
+            of several technologies that are essential for future exploration missions. The rover will also carry the largest drill ever sent to Mars,
             In order to retrieve soil samples that may contain evidence of microbial life deep below the surface.</p>
     </div>
     <div class="formulary">
